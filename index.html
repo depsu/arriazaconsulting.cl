@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arriaza Consulting | Estrategia & Cumplimiento Tributario</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .gold-accent {
+            color: #C5A059;
+        }
+
+        .bg-gold {
+            background-color: #C5A059;
+        }
+
+        .bg-navy {
+            background-color: #0F172A;
+        }
+
+        .text-navy {
+            color: #0F172A;
+        }
+
+        .border-gold {
+            border-color: #C5A059;
+        }
+
+        /* Animaciones sutiles */
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease-out;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .float-contact {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            z-index: 1000;
+        }
+
+        .btn-float {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 22px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s;
+        }
+
+        .btn-float:hover {
+            transform: scale(1.1) rotate(5deg);
+        }
+    </style>
+</head>
+
+<body class="bg-white text-slate-800">
+
+    <div class="float-contact">
+        <a href="tel:940921033" class="btn-float bg-blue-600" title="Llamada Directa"><i class="fas fa-phone"></i></a>
+        <a href="https://wa.me/56940921033" target="_blank" class="btn-float bg-green-500" title="WhatsApp"><i
+                class="fab fa-whatsapp"></i></a>
+    </div>
+
+    <nav
+        class="sticky top-0 z-[100] bg-white/95 backdrop-blur-xl border-b border-slate-100 transition-all duration-300">
+        <div class="container mx-auto px-6 py-5 flex justify-between items-center">
+            <div class="flex flex-col leading-none group cursor-pointer">
+                <span
+                    class="text-2xl font-bold tracking-tighter text-navy uppercase group-hover:opacity-80 transition">Arriaza</span>
+                <span class="text-[10px] tracking-[0.4em] gold-accent font-bold uppercase mt-1">Consulting</span>
+            </div>
+            <div
+                class="hidden lg:flex items-center space-x-10 text-[11px] font-bold uppercase tracking-widest text-slate-500">
+                <a href="#inicio" class="hover:text-navy hover:scale-105 transition duration-300">Inicio</a>
+                <a href="#experiencia" class="hover:text-navy hover:scale-105 transition duration-300">Expertise</a>
+                <a href="#servicios" class="hover:text-navy hover:scale-105 transition duration-300">Servicios</a>
+                <a href="#contacto"
+                    class="bg-navy border border-navy text-white px-6 py-2.5 rounded-sm hover:bg-transparent hover:text-navy transition-all duration-300">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="inicio" class="relative min-h-screen flex items-center bg-navy text-white overflow-hidden px-6">
+        <div class="absolute inset-0 z-0 select-none">
+            <div class="absolute inset-0 bg-gradient-to-r from-navy via-navy/90 to-navy/40 z-10"></div>
+            <!-- Improved image with more contrast and corporate feel -->
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+                class="w-full h-full object-cover opacity-30 transform scale-105 animate-[pulse_10s_ease-in-out_infinite]"
+                style="animation-play-state: paused;" alt="Fondo Corporativo">
+        </div>
+
+        <div class="container mx-auto relative z-20 pt-10">
+            <div class="max-w-4xl reveal active">
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="h-[1px] w-12 bg-gold"></div>
+                    <span class="gold-accent text-xs font-bold tracking-[0.4em] uppercase">Consultoría Tributaria de
+                        Alto Nivel</span>
+                </div>
+
+                <h1 class="text-5xl md:text-7xl lg:text-8xl mb-8 leading-[1.05] font-serif tracking-tight">
+                    Estrategia Fiscal <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-400">Inteligente &
+                        Segura.</span>
+                </h1>
+
+                <p
+                    class="text-slate-300 text-lg md:text-xl mb-12 font-light leading-relaxed max-w-2xl border-l-[3px] border-gold pl-8">
+                    Maximizamos la eficiencia tributaria y blindamos jurídicamente su patrimonio.
+                    Soluciones integrales para grandes empresas e inversionistas globales.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-5">
+                    <a href="#contacto"
+                        class="group relative bg-gold text-white px-10 py-4 font-bold rounded-sm overflow-hidden transition-all hover:shadow-[0_0_30px_rgba(197,160,89,0.3)]">
+                        <span
+                            class="absolute inset-0 w-full h-full bg-yellow-600/50 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out"></span>
+                        <span class="relative z-10 flex items-center gap-3">
+                            Agendar Sesión Estratégica
+                            <i class="fas fa-arrow-right text-sm"></i>
+                        </span>
+                    </a>
+                    <a href="#experiencia"
+                        class="group px-10 py-4 font-bold border border-white/20 text-white rounded-sm hover:bg-white hover:text-navy transition-all duration-300 flex items-center gap-3">
+                        Explorar Áreas
+                        <i
+                            class="fas fa-chevron-down text-xs opacity-0 group-hover:opacity-100 transition-all translate-y-[-5px] group-hover:translate-y-0"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 animate-bounce text-white/30 hidden md:block">
+            <i class="fas fa-arrow-down text-xl"></i>
+        </div>
+    </section>
+
+    <section id="experiencia" class="py-32 bg-slate-50 px-6 relative overflow-hidden">
+        <!-- Decoration -->
+        <div
+            class="absolute top-0 right-0 w-64 h-64 bg-slate-200/50 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none">
+        </div>
+
+        <div class="container mx-auto relative z-10">
+            <div class="grid lg:grid-cols-12 gap-16">
+                <div class="lg:col-span-4 self-center">
+                    <span class="text-navy font-bold tracking-[0.2em] uppercase text-xs mb-4 block opacity-60">Nuestra
+                        Firma</span>
+                    <h2 class="text-4xl lg:text-5xl text-navy font-serif leading-tight">Expertise que Genera Valor.</h2>
+                    <div class="w-20 h-1 bg-gold mt-8 mb-8"></div>
+                    <p class="text-slate-600 leading-relaxed mb-8 text-lg font-light">
+                        En un entorno fiscal cada vez más complejo y fiscalizado, no basta con cumplir. Se requiere una
+                        estrategia proactiva, conocimiento profundo de la normativa y una visión global de los negocios.
+                    </p>
+                    <a href="#contacto"
+                        class="inline-block text-navy font-bold uppercase text-xs tracking-widest border-b border-gold pb-1 hover:text-gold transition-colors">Conozca
+                        al equipo</a>
+                </div>
+
+                <div class="lg:col-span-8 grid md:grid-cols-2 gap-6">
+                    <div
+                        class="bg-white p-8 md:p-10 shadow-[0_20px_40px_-15px_rgba(0,0,0,0.05)] border-t-4 border-gold group hover:-translate-y-2 transition-transform duration-500 rounded-sm">
+                        <div
+                            class="text-4xl text-navy mb-6 group-hover:scale-110 transition-transform duration-500 origin-left">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-navy mb-3 uppercase tracking-tight">Mitigación de Riesgos</h4>
+                        <p class="text-slate-500 text-sm leading-relaxed">Identificamos contingencias antes de que
+                            ocurran. Auditoría preventiva y gestión de riesgos ante el SII y organismos internacionales.
+                        </p>
+                    </div>
+                    <div
+                        class="bg-white p-8 md:p-10 shadow-[0_20px_40px_-15px_rgba(0,0,0,0.05)] border-t-4 border-slate-200 hover:border-gold group hover:-translate-y-2 transition-transform duration-500 rounded-sm">
+                        <div
+                            class="text-4xl text-navy mb-6 group-hover:scale-110 transition-transform duration-500 origin-left">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-navy mb-3 uppercase tracking-tight">Eficiencia Fiscal</h4>
+                        <p class="text-slate-500 text-sm leading-relaxed">Aplicación rigurosa de franquicias y
+                            beneficios tributarios (LIR, ISFUT) para optimizar el flujo de caja operativo.</p>
+                    </div>
+                    <div
+                        class="bg-white p-8 md:p-10 shadow-[0_20px_40px_-15px_rgba(0,0,0,0.05)] border-t-4 border-slate-200 hover:border-gold group hover:-translate-y-2 transition-transform duration-500 rounded-sm">
+                        <div
+                            class="text-4xl text-navy mb-6 group-hover:scale-110 transition-transform duration-500 origin-left">
+                            <i class="fas fa-globe-americas"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-navy mb-3 uppercase tracking-tight">Visión Global</h4>
+                        <p class="text-slate-500 text-sm leading-relaxed">Especialistas en tratados de doble tributación
+                            y precios de transferencia para operaciones cross-border.</p>
+                    </div>
+                    <div
+                        class="bg-white p-8 md:p-10 shadow-[0_20px_40px_-15px_rgba(0,0,0,0.05)] border-t-4 border-slate-200 hover:border-gold group hover:-translate-y-2 transition-transform duration-500 rounded-sm">
+                        <div
+                            class="text-4xl text-navy mb-6 group-hover:scale-110 transition-transform duration-500 origin-left">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-navy mb-3 uppercase tracking-tight">Acompañamiento Total</h4>
+                        <p class="text-slate-500 text-sm leading-relaxed">Desde la planificación anual hasta la defensa
+                            en fiscalizaciones. Somos su socio estratégico de confianza.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios" class="py-32 px-6 bg-white relative">
+        <div class="container mx-auto">
+            <div class="text-center mb-24 max-w-3xl mx-auto">
+                <span class="gold-accent font-bold tracking-[0.3em] uppercase text-xs">Nuestras Especialidades</span>
+                <h2 class="text-4xl md:text-5xl text-navy mt-4 font-serif leading-tight">Soluciones Tributarias
+                    Integrales</h2>
+                <div class="w-16 h-[1px] bg-slate-300 mx-auto mt-8 mb-6"></div>
+                <p class="text-slate-500 font-light text-lg">Cubrimos todo el espectro de necesidades fiscales, desde el
+                    cumplimiento rutinario hasta la ingeniería tributaria compleja.</p>
+            </div>
+
+            <!-- National Services Grid -->
+            <div class="mb-20">
+                <h3 class="text-2xl font-serif text-navy mb-8 border-l-4 border-gold pl-4 flex items-center gap-3">
+                    Consultoría Nacional <span
+                        class="text-sm font-sans font-normal text-slate-400 tracking-normal uppercase bg-slate-100 px-3 py-1 rounded-full">Core
+                        Business</span>
+                </h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service 1 -->
+                    <div
+                        class="group p-8 border border-slate-100 bg-slate-50/50 hover:bg-white transition-all duration-300 hover:shadow-xl hover:shadow-slate-200/50 relative overflow-hidden rounded-sm">
+                        <div
+                            class="absolute top-0 right-0 p-4 opacity-[0.03] text-8xl group-hover:opacity-[0.06] transition-opacity rotate-12">
+                            <i class="fas fa-file-invoice-dollar"></i>
+                        </div>
+                        <div class="relative z-10">
+                            <div
+                                class="w-12 h-12 bg-navy text-white flex items-center justify-center rounded-sm mb-6 group-hover:bg-gold transition-colors duration-300 shadow-lg">
+                                <i class="fas fa-file-contract"></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-3 text-navy">Cumplimiento Tributario</h3>
+                            <p class="text-sm text-slate-600 mb-5 leading-relaxed">Gestión prolija de obligaciones
+                                mensuales y anuales (**F22 y F29**). Aseguramos consistencia total ante el SII.</p>
+                            <ul class="text-xs text-slate-500 space-y-2">
+                                <li class="flex items-center gap-2"><i class="fas fa-check text-gold text-[10px]"></i>
+                                    Declaraciones Juradas</li>
+                                <li class="flex items-center gap-2"><i class="fas fa-check text-gold text-[10px]"></i>
+                                    Determinación RLI</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div
+                        class="group p-8 border border-slate-100 bg-slate-50/50 hover:bg-white transition-all duration-300 hover:shadow-xl hover:shadow-slate-200/50 relative overflow-hidden rounded-sm">
+                        <div
+                            class="absolute top-0 right-0 p-4 opacity-[0.03] text-8xl group-hover:opacity-[0.06] transition-opacity rotate-12">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <div class="relative z-10">
+                            <div
+                                class="w-12 h-12 bg-navy text-white flex items-center justify-center rounded-sm mb-6 group-hover:bg-gold transition-colors duration-300 shadow-lg">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-3 text-navy">Rentas Empresariales</h3>
+                            <p class="text-sm text-slate-600 mb-5 leading-relaxed">Análisis de Capital Propio
+                                Tributario. Estrategias de retiro y distribución de utilidades eficientes.</p>
+                            <ul class="text-xs text-slate-500 space-y-2">
+                                <li class="flex items-center gap-2"><i class="fas fa-check text-gold text-[10px]"></i>
+                                    Regímenes 14A/14D</li>
+                                <li class="flex items-center gap-2"><i class="fas fa-check text-gold text-[10px]"></i>
+                                    Trazabilidad de Créditos</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div
+                        class="group p-8 border border-slate-100 bg-slate-50/50 hover:bg-white transition-all duration-300 hover:shadow-xl hover:shadow-slate-200/50 relative overflow-hidden rounded-sm">
+                        <div
+                            class="absolute top-0 right-0 p-4 opacity-[0.03] text-8xl group-hover:opacity-[0.06] transition-opacity rotate-12">
+                            <i class="fas fa-gavel"></i>
+                        </div>
+                        <div class="relative z-10">
+                            <div
+                                class="w-12 h-12 bg-navy text-white flex items-center justify-center rounded-sm mb-6 group-hover:bg-gold transition-colors duration-300 shadow-lg">
+                                <i class="fas fa-balance-scale"></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-3 text-navy">Defensa Tributaria</h3>
+                            <p class="text-sm text-slate-600 mb-5 leading-relaxed">Representación experta en
+                                fiscalizaciones. Contestación de citaciones y liquidaciones.</p>
+                            <ul class="text-xs text-slate-500 space-y-2">
+                                <li class="flex items-center gap-2"><i class="fas fa-check text-gold text-[10px]"></i>
+                                    RAV y RAF</li>
+                                <li class="flex items-center gap-2"><i class="fas fa-check text-gold text-[10px]"></i>
+                                    Liberación de Observaciones</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- International & Corporate Services Grid -->
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-navy text-white p-10 rounded-sm relative overflow-hidden group">
+                    <div
+                        class="absolute top-0 right-0 p-6 opacity-10 text-9xl group-hover:opacity-20 transition-opacity rotate-12 transform translate-x-10 -translate-y-10">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="relative z-10">
+                        <h3 class="text-2xl font-serif italic mb-6">Tributación Internacional</h3>
+                        <p class="text-slate-300 font-light mb-8 leading-relaxed">
+                            Dominamos la aplicación de **Convenios (CDT)** y la normativa chilena para capitales
+                            globales.
+                        </p>
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-start gap-3">
+                                <span class="text-gold mt-1"><i class="fas fa-arrow-right"></i></span>
+                                <div>
+                                    <strong class="block text-white text-sm uppercase tracking-wide">Impuesto Adicional
+                                        & F50</strong>
+                                    <span class="text-xs text-slate-400">Retenciones por pagos al exterior (royalties,
+                                        servicios).</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-gold mt-1"><i class="fas fa-arrow-right"></i></span>
+                                <div>
+                                    <strong class="block text-white text-sm uppercase tracking-wide">Precios de
+                                        Transferencia</strong>
+                                    <span class="text-xs text-slate-400">Declaraciones Juradas y principio Arm's
+                                        Length.</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-gold mt-1"><i class="fas fa-arrow-right"></i></span>
+                                <div>
+                                    <strong class="block text-white text-sm uppercase tracking-wide">Inversiones
+                                        Outbound</strong>
+                                    <span class="text-xs text-slate-400">Estructuras de financiamiento y reorganización
+                                        global.</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-gradient-to-br from-slate-100 to-white border border-slate-200 p-10 rounded-sm relative overflow-hidden group">
+                    <div
+                        class="absolute top-0 right-0 p-6 opacity-[0.05] text-9xl group-hover:opacity-10 transition-opacity rotate-12 transform translate-x-10 -translate-y-10">
+                        <i class="fas fa-chess"></i>
+                    </div>
+                    <div class="relative z-10">
+                        <h3 class="text-2xl font-serif text-navy italic mb-6">Consultoría Estratégica</h3>
+                        <p class="text-slate-600 font-light mb-8 leading-relaxed">
+                            Servicios de alta especialización para momentos clave de su empresa, maximizando el valor
+                            del negocio.
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="bg-white p-4 shadow-sm border-l-2 border-gold">
+                                <h4 class="font-bold text-navy text-sm uppercase mb-1">Reorganizaciones</h4>
+                                <p class="text-xs text-slate-500">Fusiones, divisiones y transformaciones eficientes.
+                                </p>
+                            </div>
+                            <div class="bg-white p-4 shadow-sm border-l-2 border-gold">
+                                <h4 class="font-bold text-navy text-sm uppercase mb-1">Impuestos Sustitutivos</h4>
+                                <p class="text-xs text-slate-500">Regularización FUT vía ISFUT / ISIF.</p>
+                            </div>
+                            <div class="bg-white p-4 shadow-sm border-l-2 border-gold">
+                                <h4 class="font-bold text-navy text-sm uppercase mb-1">Mayor Valor</h4>
+                                <p class="text-xs text-slate-500">Análisis Art. 107 LIR en venta de activos.</p>
+                            </div>
+                            <div class="bg-white p-4 shadow-sm border-l-2 border-gold">
+                                <h4 class="font-bold text-navy text-sm uppercase mb-1">Due Diligence</h4>
+                                <p class="text-xs text-slate-500">Auditoría de compra/venta de empresas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="py-24 px-6 bg-slate-50">
+        <div class="container mx-auto">
+            <div
+                class="max-w-6xl mx-auto bg-white shadow-[0_30px_60px_-15px_rgba(0,0,0,0.1)] flex flex-col md:flex-row overflow-hidden rounded-sm">
+                <div class="bg-navy p-12 text-white md:w-2/5 flex flex-col justify-between">
+                    <div>
+                        <span
+                            class="gold-accent text-xs font-bold tracking-[0.4em] uppercase mb-4 block">Hablemos</span>
+                        <h2 class="text-4xl mb-8 font-serif leading-tight">Agende una Sesión Técnica</h2>
+                        <p class="text-slate-400 mb-12 font-light leading-relaxed">Analicemos su situación tributaria
+                            actual y diseñemos juntos una estrategia a medida.</p>
+                    </div>
+
+                    <div class="space-y-8">
+                        <div class="flex items-center gap-6 group">
+                            <div
+                                class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center text-gold group-hover:bg-gold group-hover:text-white transition-all">
+                                <i class="fas fa-envelope text-lg"></i>
+                            </div>
+                            <div>
+                                <p class="text-[10px] text-slate-500 uppercase font-bold tracking-widest">Email Directo
+                                </p>
+                                <a href="mailto:admin@arriazaconsulting.cl"
+                                    class="text-sm hover:text-gold transition">admin@arriazaconsulting.cl</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-6 group">
+                            <div
+                                class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center text-gold group-hover:bg-gold group-hover:text-white transition-all">
+                                <i class="fas fa-phone-alt text-lg"></i>
+                            </div>
+                            <div>
+                                <p class="text-[10px] text-slate-500 uppercase font-bold tracking-widest">Teléfono /
+                                    WhatsApp</p>
+                                <a href="tel:940921033" class="text-sm hover:text-gold transition">+56 9 4092 1033</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-12 md:w-3/5">
+                    <form action="https://formsubmit.co/admin@arriazaconsulting.cl" method="POST" class="space-y-8">
+                        <input type="hidden" name="_next" value="https://arriazaconsulting.cl/gracias.html">
+                        <input type="hidden" name="_subject" value="Nuevo contacto desde sitio web">
+                        <input type="hidden" name="_captcha" value="false">
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div class="relative z-0 group">
+                                <input type="text" name="nombre"
+                                    class="block py-2.5 px-0 w-full text-sm text-slate-900 bg-transparent border-0 border-b-2 border-slate-200 appearance-none focus:outline-none focus:ring-0 focus:border-gold peer"
+                                    placeholder=" " required />
+                                <label for="nombre"
+                                    class="peer-focus:font-medium absolute text-xs font-bold uppercase tracking-widest text-slate-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-gold peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Nombre
+                                    Completo</label>
+                            </div>
+                            <div class="relative z-0 group">
+                                <input type="text" name="empresa"
+                                    class="block py-2.5 px-0 w-full text-sm text-slate-900 bg-transparent border-0 border-b-2 border-slate-200 appearance-none focus:outline-none focus:ring-0 focus:border-gold peer"
+                                    placeholder=" " />
+                                <label for="empresa"
+                                    class="peer-focus:font-medium absolute text-xs font-bold uppercase tracking-widest text-slate-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-gold peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Empresa</label>
+                            </div>
+                        </div>
+                        <div class="relative z-0 group">
+                            <select name="servicio"
+                                class="block py-2.5 px-0 w-full text-sm text-slate-500 bg-transparent border-0 border-b-2 border-slate-200 appearance-none focus:outline-none focus:ring-0 focus:border-gold peer">
+                                <option value="" disabled selected>Seleccione un servicio de interés</option>
+                                <option>Consultoría Tributaria Nacional</option>
+                                <option>Tributación Internacional y Precios de Transferencia</option>
+                                <option>Defensa / Fiscalización SII</option>
+                                <option>Reorganizaciones y Estrategia</option>
+                            </select>
+                            <label for="servicio"
+                                class="peer-focus:font-medium absolute text-xs font-bold uppercase tracking-widest text-slate-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-gold peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Área
+                                de Interés</label>
+                        </div>
+                        <div class="relative z-0 group">
+                            <textarea name="mensaje" rows="4"
+                                class="block py-2.5 px-0 w-full text-sm text-slate-900 bg-transparent border-0 border-b-2 border-slate-200 appearance-none focus:outline-none focus:ring-0 focus:border-gold peer"
+                                placeholder=" " required></textarea>
+                            <label for="mensaje"
+                                class="peer-focus:font-medium absolute text-xs font-bold uppercase tracking-widest text-slate-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-gold peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Mensaje
+                                o Requerimiento</label>
+                        </div>
+                        <button
+                            class="w-full bg-navy text-white font-bold py-5 uppercase text-xs tracking-[0.2em] hover:bg-gold transition-all duration-300 hover:shadow-xl focus:ring-4 focus:ring-blue-300 rounded-sm">
+                            Enviar Solicitud
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-24 px-6 bg-white">
+        <div class="container mx-auto max-w-4xl">
+            <div class="text-center mb-16">
+                <span class="gold-accent font-bold tracking-[0.3em] uppercase text-xs">Consultas Técnicas</span>
+                <h2 class="text-4xl text-navy mt-2 italic">Preguntas Frecuentes</h2>
+            </div>
+
+            <div class="space-y-6">
+                <div class="faq-item p-6 border-b border-slate-100 transition-all">
+                    <h4 class="font-bold text-navy mb-2">¿Cómo optimizar utilidades acumuladas vía ISFUT?</h4>
+                    <p class="text-sm text-slate-600">Analizamos su registro de rentas empresariales para aplicar el
+                        Impuesto Sustitutivo, permitiendo el retiro de utilidades con una tasa preferencial y
+                        simplificando su estructura tributaria futura.</p>
+                </div>
+                <div class="faq-item p-6 border-b border-slate-100 transition-all">
+                    <h4 class="font-bold text-navy mb-2">¿Qué beneficios otorgan los Convenios para Evitar la Doble
+                        Tributación (CDT)?</h4>
+                    <p class="text-sm text-slate-600">Permiten reducir las tasas de retención de Impuesto Adicional en
+                        pagos al extranjero y garantizan que un mismo ingreso no sea gravado doblemente por dos
+                        jurisdicciones distintas.</p>
+                </div>
+                <div class="faq-item p-6 border-b border-slate-100 transition-all">
+                    <h4 class="font-bold text-navy mb-2">¿Qué hacer ante una fiscalización del SII por operaciones
+                        internacionales?</h4>
+                    <p class="text-sm text-slate-600">Realizamos una auditoría preventiva de los respaldos, validamos la
+                        consistencia normativa de las operaciones y representamos técnicamente a la empresa para
+                        desvirtuar observaciones del ente fiscalizador.</p>
+                </div>
+                <div class="faq-item p-6 border-b border-slate-100 transition-all">
+                    <h4 class="font-bold text-navy mb-2">¿Cuándo es obligatorio el reporte de Precios de Transferencia?
+                    </h4>
+                    <p class="text-sm text-slate-600">Es exigible cuando existen operaciones con partes relacionadas en
+                        el extranjero. Evaluamos si sus transacciones cumplen con el principio de plena competencia para
+                        evitar ajustes y multas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-navy text-white py-16 px-6 border-t border-white/5">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-12">
+                <div class="mb-8 md:mb-0 text-center md:text-left">
+                    <span class="text-2xl font-bold uppercase tracking-tighter block mb-2">Arriaza <span
+                            class="gold-accent">Consulting</span></span>
+                    <p class="text-xs text-slate-500 uppercase tracking-widest max-w-xs mx-auto md:mx-0">Estrategia
+                        tributaria con visión de negocio.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#"
+                        class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white hover:bg-gold hover:text-white transition-all"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="#"
+                        class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white hover:bg-gold hover:text-white transition-all"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="#"
+                        class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white hover:bg-gold hover:text-white transition-all"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div
+                class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-[10px] text-slate-500 uppercase tracking-widest gap-4">
+                <div>
+                    © 2026 Arriaza Consulting. Todos los derechos reservados.
+                </div>
+                <div class="flex gap-6">
+                    <a href="politica-privacidad.html" class="hover:text-white transition">Política de Privacidad</a>
+                    <a href="#" class="hover:text-white transition">Términos de Servicio</a>
+                    <a href="https://paginasfast.cl" target="_blank" rel="noopener" class="hover:text-white transition"
+                        title="Diseño Web Profesional">Diseño: PaginasFast.cl</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Animación de aparición al hacer scroll
+        const reveals = document.querySelectorAll('.reveal');
+
+        function reveal() {
+            var windowHeight = window.innerHeight;
+            var elementVisible = 150;
+
+            reveals.forEach(el => {
+                var elementTop = el.getBoundingClientRect().top;
+                if (elementTop < windowHeight - elementVisible) {
+                    el.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', reveal);
+        // Trigger once on load
+        reveal();
+    </script>
+</body>
+
+</html>
