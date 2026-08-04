@@ -1,81 +1,33 @@
-# Mensaje para el cliente (Arriaza Consulting) — DNS + dudas
+# Mensajes para el cliente (Arriaza Consulting)
 
-Borrador listo para copiar/pegar (WhatsApp o correo). Redactado en simple.
+## Estado DNS — verificado 2026-08-04 (tarde)
 
----
+⚠️ **El cambio de NS todavía NO está aplicado.** Verificado sin caché:
 
-Hola Regina 👋 Te cuento avances del sitio nuevo y necesito confirmar algunas cosas
-para dejarlo perfecto. Es un solo mensaje con todo, para no molestarte de a gotitas:
+- `dig +norec @b.nic.cl arriazaconsulting.cl NS` → sigue devolviendo
+  `janet.ns.cloudflare.com` / `rodney.ns.cloudflare.com`. Como se consultó al
+  autoritativo del TLD .cl, no es caché local: es lo que NIC tiene publicado.
+- La zona de Cloudflare tampoco tiene registro A ni www (`dig @janet...` vacío).
+- **Del lado de Vercel está todo listo:** `dig @ns1.vercel-dns.com arriazaconsulting.cl A`
+  ya responde `64.29.17.1` / `64.29.17.65`. Apenas NIC publique la delegación, funciona solo.
+- Monitoreado 4 min sin cambios. Si Alejandro guardó el cambio en NIC, esperar y
+  reverificar; si no aparece en ~1 hora, revisar que el cambio quedó guardado.
 
-**1) El dominio arriazaconsulting.cl está "desconectado" 🔌**
+Dos caminos válidos (cualquiera sirve):
+- **NIC:** servidores de nombre → `ns1.vercel-dns.com` y `ns2.vercel-dns.com`.
+- **Cloudflare (si se quedan ahí):** registro `A @ 76.76.21.21` + `CNAME www
+  cname.vercel-dns.com`, ambos en "DNS only" (nube gris).
 
-Tu dominio existe y está bien registrado, pero hoy no muestra el sitio: le faltan dos
-"flechas" (registros DNS) que lo apunten al servidor donde vive la página. Por eso el
-sitio solo se ve en la dirección provisoria (arriazaconsulting-cl.vercel.app).
+## Dudas pendientes (ninguna respondida aún) — mensaje de WhatsApp
 
-El dominio está administrado en una plataforma llamada **Cloudflare**. Hay dos caminos
-(el A es el más fácil para ti):
+Ver bloque de copy-paste en la respuesta de la sesión. Resumen de lo que falta:
 
-- **Opción A (recomendada):** me das acceso a esa cuenta de Cloudflare (o me dices
-  quién la maneja, quizá quien te registró el dominio) y yo dejo todo conectado en
-  5 minutos, con candadito de seguridad (https) incluido.
-- **Opción B (mini tutorial, ~5 min):**
-  1. Entrar a dash.cloudflare.com con la cuenta donde está arriazaconsulting.cl.
-  2. Elegir el sitio **arriazaconsulting.cl** → menú **DNS** → **Records**.
-  3. Crear registro: Tipo **A**, Nombre **@**, Dirección IPv4 **76.76.21.21**,
-     y apagar la nubecita naranja (que quede "DNS only").
-  4. Crear otro: Tipo **CNAME**, Nombre **www**, Destino **cname.vercel-dns.com**,
-     también "DNS only".
-  5. Guardar y avisarme: yo termino la conexión del otro lado y activo el candado
-     de seguridad. En unas horas ya funciona www.arriazaconsulting.cl.
-
-**2) Teléfono y correo de contacto ☎️**
-
-En el diseño nuevo aparece **+56 9 6188 6452** y **gerencia@arriazaconsulting.cl**,
-pero el sitio actual usa **+56 9 4092 1033** y **admin@arriazaconsulting.cl**.
-¿Cuál teléfono y cuál correo dejamos? ¿Y el WhatsApp es ese mismo número?
-
-**3) Fotos reales 📸**
-
-Para que el sitio transmita confianza necesito: una foto profesional tuya (para la
-sección "Liderazgo") y, si tienes, fotos de tu oficina o de reuniones con clientes.
-Mientras tanto puse fotos genéricas provisorias.
-
-**4) Empresas cliente 🏢**
-
-El diseño muestra a Espacios Constructora, Condominio Villaseca, Control Común y
-Restaurante Empanadas de Pamela Díaz. ¿Autorizan aparecer? ¿Tienes sus logos?
-
-**5) Cifras ✔️**
-
-¿Confirmas estos números para publicarlos? **10+ empresas asesoradas, 80+ procesos de
-fiscalización acompañados, 10+ años de experiencia**.
-
-**6) Redes sociales 🔗**
-
-El diseño trae iconos de LinkedIn, Instagram, Facebook y YouTube. Pásame los links de
-las cuentas que realmente uses (las que no existan, las saco).
-
-**7) Menú "Recursos" 📚**
-
-El diseño incluye una sección "Recursos". ¿Qué te imaginas ahí? Hoy tu sitio tiene un
-blog con 3 artículos tributarios que puedo mantener y potenciar. ¿Lo dejamos como
-"Blog" o quieres algo más (guías descargables, etc.)?
-
-**8) Agendar reuniones 📅**
-
-Los botones "Agenda un diagnóstico" hoy abren WhatsApp. ¿Te acomoda así, o usas
-alguna agenda online (tipo Calendly) para conectarla?
-
-Con esas respuestas dejo el sitio listo para publicar en tu dominio. ¡Gracias! 🙌
-
----
-
-## Notas internas (no enviar)
-
-- DNS verificado 2026-08-04: NS = janet/rodney.ns.cloudflare.com, zona SIN registros
-  (dig A @ y www vacíos). La zona NO está en nuestra cuenta CF (API respondió 0 zonas).
-- Falta además: agregar el dominio al proyecto de Vercel `arriazaconsulting-cl`
-  (lado nuestro, cuenta de Vercel de Alejandro) — hacerlo cuando el cliente confirme
-  el camino A o B.
-- IP A de Vercel: 76.76.21.21 · CNAME: cname.vercel-dns.com (estándar Vercel).
+1. **Teléfono y correo definitivos** — hoy publicado: +56 9 4092 1033 /
+   admin@arriazaconsulting.cl. El mockup traía +56 9 6188 6452 / gerencia@.
+2. **Fotos reales** — hero y retrato de Regina son Unsplash provisorias (marcadas en el
+   HTML con `FOTO PROVISORIA`).
+3. **Empresas cliente** — autorización para nombrarlas + logos reales (hoy: iniciales).
+4. **Cifras** — 10+ empresas, 80+ fiscalizaciones, 10+ años, 100% (¿confirmadas?).
+5. **Redes sociales** — los 4 iconos del footer apuntan a `#`.
+6. **Agendamiento** — hoy los CTA abren WhatsApp; ¿prefiere Calendly u otra agenda?
+7. **"Recursos"** — hoy apunta al blog existente; confirmar si va contenido propio.
