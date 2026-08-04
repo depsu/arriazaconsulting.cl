@@ -4,13 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arriaza Consulting | Estrategia & Cumplimiento Tributario PYME en Chile</title>
-    <meta name="description" content="Asesoría tributaria estratégica para PYMES y holdings familiares en Chile. Diagnóstico tributario, Pro PYME, planificación fiscal y casos reales.">
+    <title>Arriaza Consulting | Estrategia Tributaria y Control de Decisiones Empresariales</title>
+    <meta name="description"
+        content="Comprendemos las decisiones. Protegemos el futuro. Asesoría integral financiera, tributaria y estratégica para empresas en Chile con la metodología I.D.E.A.">
     <link rel="canonical" href="https://arriazaconsulting.cl/">
     <meta name="robots" content="index,follow,max-image-preview:large">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Arriaza Consulting | Estrategia & Cumplimiento Tributario PYME">
-    <meta property="og:description" content="Asesoría tributaria estratégica para PYMES y holdings familiares en Chile.">
+    <meta property="og:title" content="Arriaza Consulting | Estrategia Tributaria y Control de Decisiones">
+    <meta property="og:description"
+        content="Ayudamos a empresas a comprender las consecuencias financieras, tributarias, operativas y estratégicas de cada decisión antes de ejecutarla.">
     <meta property="og:url" content="https://arriazaconsulting.cl/">
     <meta property="og:image" content="https://arriazaconsulting.cl/og.jpg">
     <meta property="og:image:width" content="1200">
@@ -18,670 +20,685 @@
     <meta property="og:site_name" content="Arriaza Consulting">
     <meta property="og:locale" content="es_CL">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Arriaza Consulting | Tributación PYME Chile">
-    <meta name="twitter:description" content="Asesoría tributaria estratégica para PYMES y holdings familiares.">
+    <meta name="twitter:title" content="Arriaza Consulting | Estrategia y Decisiones Empresariales">
+    <meta name="twitter:description"
+        content="Metodología I.D.E.A.: comprender el impacto completo de cada decisión antes de ejecutarla.">
     <meta name="twitter:image" content="https://arriazaconsulting.cl/og.jpg">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Archivo:wght@400;500;600;700&family=Allura&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Arriaza Consulting",
+      "description": "Estrategia tributaria y control de decisiones empresariales. Metodología I.D.E.A.",
+      "url": "https://arriazaconsulting.cl/",
+      "areaServed": "Chile",
+      "address": { "@type": "PostalAddress", "addressLocality": "Santiago", "addressCountry": "CL" },
+      "founder": { "@type": "Person", "name": "Regina Pastora Arriaza Benítez", "jobTitle": "Contadora Auditora, Ingeniera en Control de Gestión, Magíster en Tributación" }
+    }
+    </script>
     <style>
+        :root {
+            --navy-950: #0A101F;
+            --navy-900: #0F172A;
+            --navy-800: #16223A;
+            --navy-700: #1E2C4A;
+            --gold: #C5A059;
+            --gold-soft: #D9BC85;
+            --gold-deep: #A98438;
+            --cream: #F7F4EE;
+            --paper: #FDFCF9;
+            --ink: #1B2337;
+            --ink-soft: #4B5468;
+            --line: rgba(197, 160, 89, .28);
+            --shadow-lg: 0 30px 60px -20px rgba(10, 16, 31, .35);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html { scroll-behavior: smooth; }
+
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Archivo', sans-serif;
+            color: var(--ink);
+            background: var(--paper);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
         }
 
-        h1,
-        h2,
-        h3,
-        .font-serif {
-            font-family: 'Playfair Display', serif;
+        h1, h2, h3, .serif { font-family: 'Playfair Display', serif; font-weight: 600; line-height: 1.15; }
+
+        img { max-width: 100%; display: block; }
+
+        a { text-decoration: none; color: inherit; }
+
+        .wrap { max-width: 1180px; margin: 0 auto; padding: 0 24px; }
+
+        /* ============ Kicker / etiquetas ============ */
+        .kicker {
+            display: inline-flex; align-items: center; gap: 14px;
+            font-size: 12px; font-weight: 600; letter-spacing: .22em; text-transform: uppercase;
+            color: var(--gold);
+        }
+        .kicker::before { content: ""; width: 34px; height: 2px; background: var(--gold); }
+
+        /* ============ Botones ============ */
+        .btn {
+            display: inline-flex; align-items: center; gap: 10px;
+            font-size: 13px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
+            padding: 15px 26px; border: 1px solid transparent; cursor: pointer;
+            transition: transform .25s ease, box-shadow .25s ease, background .25s ease, color .25s ease;
+        }
+        .btn svg { width: 15px; height: 15px; flex: none; transition: transform .25s ease; }
+        .btn:hover svg { transform: translateX(4px); }
+        .btn-gold { background: var(--gold); color: var(--navy-950); }
+        .btn-gold:hover { background: var(--gold-soft); transform: translateY(-2px); box-shadow: 0 14px 30px -12px rgba(197, 160, 89, .55); }
+        .btn-ghost { border-color: rgba(255, 255, 255, .35); color: #fff; }
+        .btn-ghost:hover { border-color: var(--gold); color: var(--gold-soft); transform: translateY(-2px); }
+        .btn-ghost-dark { border-color: var(--navy-900); color: var(--navy-900); }
+        .btn-ghost-dark:hover { background: var(--navy-900); color: var(--gold-soft); transform: translateY(-2px); }
+
+        /* ============ Header ============ */
+        header {
+            position: fixed; inset: 0 0 auto 0; z-index: 90;
+            transition: background .3s ease, box-shadow .3s ease;
+        }
+        header.solid { background: rgba(10, 16, 31, .92); backdrop-filter: blur(12px); box-shadow: 0 8px 30px -18px rgba(0, 0, 0, .6); }
+        .nav { display: flex; align-items: center; justify-content: space-between; padding: 18px 0; }
+        .brand { display: flex; align-items: center; gap: 12px; color: #fff; }
+        .brand-mark {
+            width: 44px; height: 44px; display: grid; place-items: center;
+            background: linear-gradient(150deg, var(--gold) 0%, var(--gold-deep) 100%);
+            font-family: 'Playfair Display', serif; font-weight: 700; font-size: 24px; color: var(--navy-950);
+        }
+        .brand-name { font-family: 'Playfair Display', serif; font-size: 21px; font-weight: 700; letter-spacing: .12em; display: block; line-height: 1.1; }
+        .brand-sub { font-size: 9px; letter-spacing: .48em; text-transform: uppercase; color: var(--gold-soft); display: flex; align-items: center; gap: 8px; }
+        .brand-sub::before, .brand-sub::after { content: ""; height: 1px; width: 14px; background: var(--gold-deep); }
+        .nav-links { display: flex; gap: 30px; align-items: center; list-style: none; }
+        .nav-links a { color: rgba(255, 255, 255, .82); font-size: 13px; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; padding: 6px 0; border-bottom: 2px solid transparent; transition: color .2s, border-color .2s; }
+        .nav-links a:hover { color: var(--gold-soft); border-color: var(--gold); }
+        .nav-cta { margin-left: 8px; }
+        .nav-cta a { border-bottom: none; }
+        .nav-toggle { display: none; background: none; border: 1px solid rgba(255,255,255,.3); color: #fff; padding: 8px 12px; font-size: 18px; cursor: pointer; }
+
+        /* ============ Hero ============ */
+        .hero {
+            position: relative; min-height: 92vh; display: flex; align-items: center;
+            background: radial-gradient(1100px 600px at 85% 20%, #1C2A49 0%, var(--navy-950) 60%);
+            color: #fff; overflow: hidden; padding: 140px 0 90px;
+        }
+        .hero::before {
+            content: ""; position: absolute; inset: 0;
+            background-image: radial-gradient(rgba(197, 160, 89, .12) 1px, transparent 1px);
+            background-size: 26px 26px; opacity: .5;
+            mask-image: linear-gradient(115deg, transparent 45%, #000 100%);
+            -webkit-mask-image: linear-gradient(115deg, transparent 45%, #000 100%);
+        }
+        .hero-grid { position: relative; display: grid; grid-template-columns: 1.05fr .95fr; gap: 56px; align-items: center; }
+        .hero h1 { font-size: clamp(40px, 5.4vw, 66px); font-weight: 700; margin: 22px 0 26px; }
+        .hero h1 .gold { color: var(--gold); font-style: italic; }
+        .hero-copy {
+            font-size: 17px; color: rgba(255, 255, 255, .78); max-width: 520px;
+            padding-left: 20px; border-left: 3px solid var(--gold); margin-bottom: 38px;
+        }
+        .hero-actions { display: flex; flex-wrap: wrap; gap: 16px; }
+        .hero-visual { position: relative; }
+        .hero-visual .frame {
+            position: absolute; inset: -18px 18px 18px -18px;
+            border: 1px solid var(--line); z-index: 0;
+        }
+        .hero-visual img { position: relative; z-index: 1; box-shadow: var(--shadow-lg); aspect-ratio: 5/4; object-fit: cover; }
+        .hero-badge {
+            position: absolute; z-index: 2; left: -28px; bottom: 36px;
+            background: var(--navy-900); border: 1px solid var(--line);
+            padding: 18px 22px; display: flex; gap: 14px; align-items: center;
+            box-shadow: var(--shadow-lg);
+        }
+        .hero-badge strong { font-family: 'Playfair Display', serif; font-size: 26px; color: var(--gold-soft); display: block; line-height: 1; }
+        .hero-badge span { font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: rgba(255,255,255,.6); }
+
+        /* ============ Flotantes ============ */
+        .floaters { position: fixed; right: 26px; bottom: 26px; z-index: 80; display: flex; flex-direction: column; gap: 14px; }
+        .floaters a {
+            width: 54px; height: 54px; border-radius: 50%; display: grid; place-items: center;
+            color: #fff; box-shadow: 0 10px 24px -8px rgba(0, 0, 0, .45);
+            transition: transform .25s ease;
+        }
+        .floaters a:hover { transform: scale(1.1); }
+        .floaters svg { width: 26px; height: 26px; }
+        .f-phone { background: #2563EB; }
+        .f-wsp { background: #25D366; }
+
+        /* ============ Secciones genéricas ============ */
+        section { padding: 96px 0; }
+        .sec-head { max-width: 640px; margin-bottom: 56px; }
+        .sec-head h2 { font-size: clamp(30px, 3.6vw, 44px); margin-top: 18px; color: var(--navy-900); }
+        .sec-head.center { margin-left: auto; margin-right: auto; text-align: center; }
+        .sec-head.center .kicker { justify-content: center; }
+        .sec-head.center .kicker::before { display: none; }
+
+        /* ============ Desafío / Respuesta ============ */
+        .challenge { background: var(--cream); position: relative; overflow: hidden; }
+        .challenge::after {
+            content: "I.D.E.A."; position: absolute; right: -30px; bottom: -50px;
+            font-family: 'Playfair Display', serif; font-size: 190px; font-weight: 700;
+            color: rgba(197, 160, 89, .09); letter-spacing: .02em; pointer-events: none;
+        }
+        .challenge-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; position: relative; }
+        .challenge h2 { font-size: clamp(28px, 3.2vw, 40px); color: var(--navy-900); margin-top: 18px; }
+        .challenge .lead { font-size: 17px; color: var(--ink-soft); margin-top: 22px; }
+        .answer-card {
+            background: var(--navy-900); color: #fff; padding: 44px 40px;
+            border-top: 4px solid var(--gold); box-shadow: var(--shadow-lg);
+        }
+        .answer-card p { color: rgba(255, 255, 255, .8); font-size: 16px; }
+        .answer-card .big-claim {
+            font-family: 'Playfair Display', serif; font-style: italic; font-size: 22px;
+            color: #fff; margin: 22px 0; padding-left: 18px; border-left: 3px solid var(--gold);
         }
 
-        .gold-accent {
-            color: #C5A059;
+        /* ============ Metodología ============ */
+        .method { background: var(--navy-950); color: #fff; position: relative; overflow: hidden; }
+        .method::before {
+            content: ""; position: absolute; inset: 0;
+            background-image: radial-gradient(rgba(197, 160, 89, .1) 1px, transparent 1px);
+            background-size: 30px 30px; opacity: .4;
+        }
+        .method .sec-head h2 { color: #fff; }
+        .method .sec-head p { color: rgba(255, 255, 255, .7); margin-top: 16px; }
+        .method-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); position: relative; }
+        .method-step { background: var(--navy-900); padding: 40px 30px 46px; position: relative; transition: background .3s ease; }
+        .method-step:hover { background: var(--navy-800); }
+        .method-step .letter {
+            font-family: 'Playfair Display', serif; font-size: 64px; font-weight: 700;
+            color: transparent; -webkit-text-stroke: 1.5px var(--gold); line-height: 1;
+        }
+        .method-step h3 { font-size: 21px; margin: 20px 0 12px; color: var(--gold-soft); }
+        .method-step p { font-size: 14.5px; color: rgba(255, 255, 255, .72); }
+        .method-step .num { position: absolute; top: 24px; right: 24px; font-size: 11px; letter-spacing: .2em; color: rgba(255,255,255,.35); }
+
+        /* ============ Servicios ============ */
+        .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; }
+        .service {
+            border: 1px solid #E7E2D6; background: #fff; padding: 34px 30px;
+            position: relative; transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+        }
+        .service::before { content: ""; position: absolute; top: 0; left: 0; width: 0; height: 3px; background: var(--gold); transition: width .35s ease; }
+        .service:hover { transform: translateY(-6px); box-shadow: 0 24px 44px -22px rgba(15, 23, 42, .25); border-color: var(--line); }
+        .service:hover::before { width: 100%; }
+        .service .icon { width: 46px; height: 46px; color: var(--gold-deep); margin-bottom: 20px; }
+        .service .icon svg { width: 100%; height: 100%; }
+        .service h3 { font-size: 20px; margin-bottom: 10px; color: var(--navy-900); }
+        .service p { font-size: 14.5px; color: var(--ink-soft); }
+
+        /* ============ Clientes + stats ============ */
+        .clients { background: var(--cream); }
+        .clients-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 26px; margin-bottom: 70px; }
+        .client-card {
+            background: #fff; border: 1px solid #E7E2D6; padding: 34px 20px; text-align: center;
+            display: flex; flex-direction: column; align-items: center; gap: 14px;
+            transition: transform .3s ease, border-color .3s ease;
+        }
+        .client-card:hover { transform: translateY(-5px); border-color: var(--gold); }
+        .client-card .logo-mono {
+            width: 58px; height: 58px; display: grid; place-items: center;
+            border: 1.5px solid var(--gold-deep); color: var(--gold-deep);
+            font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 700;
+        }
+        .client-card strong { font-size: 14px; letter-spacing: .06em; text-transform: uppercase; color: var(--navy-900); }
+        .client-card span { font-size: 11.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-soft); }
+        .stats { display: grid; grid-template-columns: repeat(4, 1fr); border: 1px solid var(--line); background: #fff; }
+        .stat { padding: 38px 20px; text-align: center; border-left: 1px solid var(--line); }
+        .stat:first-child { border-left: none; }
+        .stat strong { font-family: 'Playfair Display', serif; font-size: 44px; color: var(--navy-900); display: block; line-height: 1.1; }
+        .stat strong em { font-style: normal; color: var(--gold-deep); }
+        .stat span { font-size: 12.5px; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-soft); }
+
+        /* ============ Liderazgo ============ */
+        .leader { background: var(--navy-950); color: #fff; overflow: hidden; }
+        .leader-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 64px; align-items: center; }
+        .leader-visual { position: relative; }
+        .leader-visual::before { content: ""; position: absolute; inset: 22px -22px -22px 22px; border: 1px solid var(--line); }
+        .leader-visual img { position: relative; aspect-ratio: 4/5; object-fit: cover; box-shadow: var(--shadow-lg); }
+        .leader h2 { font-size: clamp(30px, 3.4vw, 42px); color: #fff; margin-top: 18px; }
+        .leader .bio { color: rgba(255, 255, 255, .78); margin: 22px 0; font-size: 16px; }
+        .creds { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 12px 26px; margin: 28px 0 34px; }
+        .creds li { display: flex; gap: 10px; align-items: flex-start; font-size: 14px; color: rgba(255, 255, 255, .85); }
+        .creds li::before { content: "◆"; color: var(--gold); font-size: 10px; margin-top: 5px; }
+        .signature { font-family: 'Allura', cursive; font-size: 44px; color: var(--gold-soft); margin: 8px 0 26px; }
+
+        /* ============ Cita / cierre ============ */
+        .quote-band { background: var(--cream); text-align: center; padding: 80px 0; }
+        .quote-band blockquote {
+            font-family: 'Playfair Display', serif; font-style: italic; font-size: clamp(22px, 2.8vw, 32px);
+            color: var(--navy-900); max-width: 820px; margin: 0 auto;
+        }
+        .quote-band blockquote .gold { color: var(--gold-deep); }
+        .quote-band .mark { font-family: 'Playfair Display', serif; font-size: 80px; color: var(--gold); line-height: .4; display: block; margin-bottom: 26px; }
+
+        /* ============ CTA final ============ */
+        .cta { background: linear-gradient(120deg, var(--navy-900) 0%, var(--navy-950) 100%); color: #fff; position: relative; overflow: hidden; }
+        .cta::after {
+            content: ""; position: absolute; right: -120px; top: -120px; width: 380px; height: 380px;
+            border: 1px solid var(--line); border-radius: 50%;
+        }
+        .cta::before {
+            content: ""; position: absolute; right: -60px; top: -60px; width: 380px; height: 380px;
+            border: 1px solid rgba(197, 160, 89, .15); border-radius: 50%;
+        }
+        .cta-grid { display: grid; grid-template-columns: 1.2fr .8fr; gap: 48px; align-items: center; position: relative; }
+        .cta h2 { font-size: clamp(30px, 3.6vw, 46px); color: #fff; }
+        .cta h2 .gold { color: var(--gold); font-style: italic; }
+        .cta p { color: rgba(255, 255, 255, .75); margin-top: 18px; max-width: 480px; }
+        .cta-actions { display: flex; flex-direction: column; gap: 16px; align-items: stretch; }
+
+        /* ============ Footer ============ */
+        footer { background: var(--navy-950); color: rgba(255, 255, 255, .75); border-top: 1px solid var(--line); }
+        .foot-grid { display: grid; grid-template-columns: 1.3fr 1fr 1fr 1.2fr; gap: 44px; padding: 70px 0 50px; }
+        .foot-grid h4 { font-size: 12px; letter-spacing: .2em; text-transform: uppercase; color: var(--gold); margin-bottom: 20px; }
+        .foot-grid ul { list-style: none; display: grid; gap: 10px; }
+        .foot-grid ul a { font-size: 14px; transition: color .2s; }
+        .foot-grid ul a:hover { color: var(--gold-soft); }
+        .foot-brand p { font-size: 13.5px; margin-top: 16px; max-width: 260px; }
+        .socials { display: flex; gap: 12px; margin-top: 22px; }
+        .socials a {
+            width: 36px; height: 36px; border: 1px solid rgba(255, 255, 255, .25); border-radius: 50%;
+            display: grid; place-items: center; transition: border-color .2s, color .2s; color: rgba(255,255,255,.75);
+        }
+        .socials a:hover { border-color: var(--gold); color: var(--gold-soft); }
+        .socials svg { width: 15px; height: 15px; }
+        .foot-contact li { display: flex; gap: 12px; align-items: flex-start; font-size: 14px; }
+        .foot-contact svg { width: 16px; height: 16px; color: var(--gold); flex: none; margin-top: 3px; }
+        .foot-quote {
+            border-left: 2px solid var(--gold); padding-left: 18px; font-size: 14px; font-style: italic;
+            color: rgba(255, 255, 255, .65); margin-top: 26px;
+        }
+        .foot-bottom { border-top: 1px solid rgba(255, 255, 255, .1); padding: 22px 0; font-size: 13px; text-align: center; color: rgba(255, 255, 255, .5); }
+        .foot-bottom a { color: rgba(255, 255, 255, .65); }
+        .foot-bottom a:hover { color: var(--gold-soft); }
+
+        /* ============ Reveal ============ */
+        .reveal { opacity: 0; transform: translateY(26px); transition: opacity .7s ease, transform .7s ease; }
+        .reveal.active { opacity: 1; transform: none; }
+        .reveal-d1 { transition-delay: .12s; }
+        .reveal-d2 { transition-delay: .24s; }
+        .reveal-d3 { transition-delay: .36s; }
+
+        /* ============ Responsive ============ */
+        @media (max-width: 980px) {
+            .hero-grid, .challenge-grid, .leader-grid, .cta-grid { grid-template-columns: 1fr; }
+            .method-grid { grid-template-columns: 1fr 1fr; }
+            .services-grid { grid-template-columns: 1fr 1fr; }
+            .clients-grid, .stats { grid-template-columns: 1fr 1fr; }
+            .stat { border-top: 1px solid var(--line); }
+            .foot-grid { grid-template-columns: 1fr 1fr; }
+            .nav-links { position: fixed; inset: 76px 0 auto 0; background: rgba(10, 16, 31, .97); flex-direction: column; padding: 26px 0 34px; gap: 20px; transform: translateY(-130%); transition: transform .3s ease; }
+            .nav-links.open { transform: none; }
+            .nav-toggle { display: block; }
+            .hero { padding-top: 120px; }
+            .hero-badge { left: 0; }
+        }
+        @media (max-width: 620px) {
+            section { padding: 70px 0; }
+            .method-grid, .services-grid, .clients-grid, .foot-grid { grid-template-columns: 1fr; }
+            .stats { grid-template-columns: 1fr 1fr; }
+            .creds { grid-template-columns: 1fr; }
+            .hero-actions .btn { width: 100%; justify-content: center; }
         }
 
-        .bg-gold {
-            background-color: #C5A059;
-        }
-
-        .bg-navy {
-            background-color: #0F172A;
-        }
-
-        .text-navy {
-            color: #0F172A;
-        }
-
-        .border-gold {
-            border-color: #C5A059;
-        }
-
-        /* Animaciones sutiles */
-        .reveal {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: all 0.6s ease-out;
-        }
-
-        .reveal.active {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .float-contact {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            z-index: 1000;
-        }
-
-        .btn-float {
-            width: 55px;
-            height: 55px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 22px;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-            transition: all 0.3s;
-        }
-
-        .btn-float:hover {
-            transform: scale(1.1) rotate(5deg);
+        @media (prefers-reduced-motion: reduce) {
+            .reveal { opacity: 1; transform: none; transition: none; }
         }
     </style>
 </head>
 
-<body class="bg-white text-slate-800">
+<body>
 
-    <div class="float-contact">
-        <a href="tel:940921033" class="btn-float bg-blue-600" title="Llamar Ahora"><i class="fas fa-phone"></i></a>
-        <a href="https://wa.me/56940921033?text=Hola,%20quisiera%20agendar%20una%20reunion%20de%20diagnostico%20tributario%20para%20mi%20empresa."
-            target="_blank" class="btn-float bg-green-500 font-bold" title="Hablemos por WhatsApp">
-            <i class="fab fa-whatsapp"></i>
-        </a>
-    </div>
-
-    <nav
-        class="sticky top-0 z-[100] bg-white/95 backdrop-blur-xl border-b border-slate-100 transition-all duration-300">
-        <div class="container mx-auto px-6 py-5 flex justify-between items-center">
-            <div class="flex flex-col leading-none group cursor-pointer">
-                <span
-                    class="text-2xl font-bold tracking-tighter text-navy uppercase group-hover:opacity-80 transition">Arriaza</span>
-                <span class="text-[10px] tracking-[0.4em] gold-accent font-bold uppercase mt-1">Consulting</span>
-            </div>
-            <div
-                class="hidden lg:flex items-center space-x-10 text-[11px] font-bold uppercase tracking-widest text-slate-500">
-                <a href="#inicio" class="hover:text-navy hover:scale-105 transition duration-300">Inicio</a>
-                <a href="#experiencia" class="hover:text-navy hover:scale-105 transition duration-300">Expertise</a>
-                <a href="#servicios" class="hover:text-navy hover:scale-105 transition duration-300">Servicios</a>
-                <a href="/blog" class="hover:text-navy hover:scale-105 transition duration-300">Blog</a>
-                <a href="#contacto"
-                    class="bg-navy border border-navy text-white px-6 py-2.5 rounded-sm hover:bg-transparent hover:text-[#0F172A] transition-all duration-300">Contacto</a>
-            </div>
+    <header id="header">
+        <div class="wrap nav">
+            <a href="#inicio" class="brand" aria-label="Arriaza Consulting — Inicio">
+                <span class="brand-mark">A</span>
+                <span>
+                    <span class="brand-name">ARRIAZA</span>
+                    <span class="brand-sub">Consulting</span>
+                </span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#expertise">Expertise</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#clientes">Clientes</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li class="nav-cta"><a href="#contacto" class="btn btn-gold" style="padding:12px 20px;">Contacto</a></li>
+            </ul>
         </div>
-    </nav>
+    </header>
 
-    <section id="inicio" class="relative min-h-[80vh] flex items-center bg-navy text-white overflow-hidden px-6">
-        <div class="absolute inset-0 z-0 select-none">
-            <div class="absolute inset-0 bg-gradient-to-r from-navy via-navy/90 to-navy/40 z-10"></div>
-            <!-- Improved image with more contrast and corporate feel -->
-            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
-                class="w-full h-full object-cover opacity-30 transform scale-105 animate-[pulse_10s_ease-in-out_infinite]"
-                style="animation-play-state: paused;" alt="Fondo Corporativo">
-        </div>
-
-        <div class="container mx-auto relative z-20 pt-0">
-            <div class="max-w-4xl reveal active">
-                <div class="flex items-center gap-4 mb-6">
-                    <div class="h-[1px] w-12 bg-gold"></div>
-                    <span class="gold-accent text-xs font-bold tracking-[0.2em] uppercase">Reducimos riesgos fiscales y
-                        aumentamos rentabilidad legalmente</span>
-                </div>
-
-                <h1 class="text-5xl md:text-7xl lg:text-8xl mb-6 leading-[1.05] font-serif tracking-tight">
-                    Estrategia Fiscal <br>
-                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-400">Inteligente &
-                        Segura.</span>
-                </h1>
-
-                <p
-                    class="text-slate-300 text-lg md:text-xl mb-10 font-light leading-relaxed max-w-2xl border-l-[3px] border-gold pl-8">
-                    Maximizamos la eficiencia tributaria y blindamos jurídicamente su patrimonio.
-                    Soluciones integrales para grandes empresas e inversionistas globales.
-                </p>
-
-                <div class="flex flex-col sm:flex-row gap-5">
-                    <a href="#contacto"
-                        class="group relative bg-gold text-white px-10 py-4 font-bold rounded-sm overflow-hidden transition-all hover:shadow-[0_0_30px_rgba(197,160,89,0.3)]">
-                        <span
-                            class="absolute inset-0 w-full h-full bg-yellow-600/50 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out"></span>
-                        <span class="relative z-10 flex items-center gap-3">
-                            Agendar Sesión Estratégica
-                            <i class="fas fa-arrow-right text-sm"></i>
-                        </span>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="inicio">
+        <div class="wrap hero-grid">
+            <div>
+                <span class="kicker reveal">Comprender hoy, decidir mejor, proteger el mañana</span>
+                <h1 class="reveal reveal-d1">Comprendemos las decisiones.<br><span class="gold">Protegemos el futuro.</span></h1>
+                <p class="hero-copy reveal reveal-d2">Ayudamos a empresas y empresarios a comprender todas las
+                    consecuencias financieras, tributarias, operativas, legales y estratégicas de cada decisión
+                    <strong>antes de ejecutarla</strong>.</p>
+                <div class="hero-actions reveal reveal-d3">
+                    <a class="btn btn-gold"
+                        href="https://wa.me/56940921033?text=Hola,%20quisiera%20agendar%20un%20diagn%C3%B3stico%20estrat%C3%A9gico%20para%20mi%20empresa.">
+                        Agenda un diagnóstico estratégico
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
                     </a>
-                    <a href="#experiencia"
-                        class="group px-10 py-4 font-bold border border-white/20 text-white rounded-sm hover:bg-white hover:text-[#0F172A] transition-all duration-300 flex items-center gap-3">
-                        Explorar Áreas
-                        <i
-                            class="fas fa-chevron-down text-xs opacity-0 group-hover:opacity-100 transition-all translate-y-[-5px] group-hover:translate-y-0"></i>
-                    </a>
+                    <a class="btn btn-ghost" href="#expertise">Metodología I.D.E.A.</a>
                 </div>
             </div>
-        </div>
-
-        <!-- Scroll indicator -->
-        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 animate-bounce text-white/30 hidden md:block">
-            <i class="fas fa-arrow-down text-xl"></i>
-        </div>
-    </section>
-
-    <section id="experiencia" class="py-32 bg-slate-50 px-6 relative overflow-hidden">
-        <!-- Decoration -->
-        <div
-            class="absolute top-0 right-0 w-64 h-64 bg-slate-200/50 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none">
-        </div>
-
-        <div class="container mx-auto relative z-10">
-            <div class="grid lg:grid-cols-12 gap-16">
-                <div class="lg:col-span-4 self-center">
-                    <span class="text-navy font-bold tracking-[0.2em] uppercase text-xs mb-4 block opacity-60">Nuestra
-                        Firma</span>
-                    <h2 class="text-4xl lg:text-5xl text-navy font-serif leading-tight">Expertise que Genera Valor.</h2>
-                    <div class="w-20 h-1 bg-gold mt-8 mb-8"></div>
-                    <p class="text-slate-600 leading-relaxed mb-8 text-lg font-light">
-                        En un entorno fiscal cada vez más complejo y fiscalizado, no basta con cumplir. Se requiere una
-                        estrategia proactiva, conocimiento profundo de la normativa y una visión global de los negocios.
-                    </p>
-                    <a href="#contacto"
-                        class="inline-block text-navy font-bold uppercase text-xs tracking-widest border-b border-gold pb-1 hover:text-gold transition-colors">Conozca
-                        al equipo</a>
-                </div>
-
-                <div class="lg:col-span-8 grid md:grid-cols-2 gap-6">
-                    <div
-                        class="bg-white p-8 md:p-10 shadow-[0_20px_40px_-15px_rgba(0,0,0,0.05)] border-t-4 border-gold group hover:-translate-y-2 transition-transform duration-500 rounded-sm">
-                        <div
-                            class="text-4xl text-navy mb-6 group-hover:scale-110 transition-transform duration-500 origin-left">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
-                        <h4 class="text-lg font-bold text-navy mb-3 uppercase tracking-tight">Mitigación de Riesgos</h4>
-                        <p class="text-slate-500 text-sm leading-relaxed">Identificamos contingencias antes de que
-                            ocurran. Auditoría preventiva y gestión de riesgos ante el SII y organismos internacionales.
-                        </p>
-                    </div>
-                    <div
-                        class="bg-white p-8 md:p-10 shadow-[0_20px_40px_-15px_rgba(0,0,0,0.05)] border-t-4 border-slate-200 hover:border-gold group hover:-translate-y-2 transition-transform duration-500 rounded-sm">
-                        <div
-                            class="text-4xl text-navy mb-6 group-hover:scale-110 transition-transform duration-500 origin-left">
-                            <i class="fas fa-chart-pie"></i>
-                        </div>
-                        <h4 class="text-lg font-bold text-navy mb-3 uppercase tracking-tight">Eficiencia Fiscal</h4>
-                        <p class="text-slate-500 text-sm leading-relaxed">Aplicación rigurosa de franquicias y
-                            beneficios tributarios (LIR, ISFUT) para optimizar el flujo de caja operativo.</p>
-                    </div>
-                    <div
-                        class="bg-white p-8 md:p-10 shadow-[0_20px_40px_-15px_rgba(0,0,0,0.05)] border-t-4 border-slate-200 hover:border-gold group hover:-translate-y-2 transition-transform duration-500 rounded-sm">
-                        <div
-                            class="text-4xl text-navy mb-6 group-hover:scale-110 transition-transform duration-500 origin-left">
-                            <i class="fas fa-globe-americas"></i>
-                        </div>
-                        <h4 class="text-lg font-bold text-navy mb-3 uppercase tracking-tight">Visión Global</h4>
-                        <p class="text-slate-500 text-sm leading-relaxed">Especialistas en tratados de doble tributación
-                            y precios de transferencia para operaciones cross-border.</p>
-                    </div>
-                    <div
-                        class="bg-white p-8 md:p-10 shadow-[0_20px_40px_-15px_rgba(0,0,0,0.05)] border-t-4 border-slate-200 hover:border-gold group hover:-translate-y-2 transition-transform duration-500 rounded-sm">
-                        <div
-                            class="text-4xl text-navy mb-6 group-hover:scale-110 transition-transform duration-500 origin-left">
-                            <i class="fas fa-handshake"></i>
-                        </div>
-                        <h4 class="text-lg font-bold text-navy mb-3 uppercase tracking-tight">Acompañamiento Total</h4>
-                        <p class="text-slate-500 text-sm leading-relaxed">Desde la planificación anual hasta la defensa
-                            en fiscalizaciones. Somos su socio estratégico de confianza.</p>
-                    </div>
+            <div class="hero-visual reveal reveal-d2">
+                <span class="frame"></span>
+                <!-- FOTO PROVISORIA (Unsplash) — reemplazar por foto real del equipo/oficina -->
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1400&q=80"
+                    alt="Equipo de Arriaza Consulting analizando decisiones empresariales" width="700" height="560">
+                <div class="hero-badge">
+                    <div><strong>10+</strong></div>
+                    <span>Empresas<br>asesoradas</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="servicios" class="py-32 px-6 bg-white relative">
-        <div class="container mx-auto">
-            <div class="text-center mb-24 max-w-3xl mx-auto">
-                <span class="gold-accent font-bold tracking-[0.3em] uppercase text-xs">Nuestras Especialidades</span>
-                <h2 class="text-4xl md:text-5xl text-navy mt-4 font-serif leading-tight">Soluciones Tributarias
-                    Integrales</h2>
-                <div class="w-16 h-[1px] bg-slate-300 mx-auto mt-8 mb-6"></div>
-                <p class="text-slate-500 font-light text-lg">Cubrimos todo el espectro de necesidades fiscales, desde el
-                    cumplimiento rutinario hasta la ingeniería tributaria compleja.</p>
+    <!-- ============ DESAFÍO / RESPUESTA ============ -->
+    <section class="challenge">
+        <div class="wrap challenge-grid">
+            <div class="reveal">
+                <span class="kicker">El desafío</span>
+                <h2>Una decisión nunca genera un solo efecto.</h2>
+                <p class="lead">Las empresas generan información todos los días. El problema no es la falta de datos:
+                    es comprender cómo una decisión impacta a toda la organización. Una decisión financiera puede
+                    modificar la carga tributaria; una tributaria puede afectar la caja; una operativa puede
+                    incrementar un riesgo legal.</p>
             </div>
-
-            <!-- National Services Grid -->
-            <div class="mb-20">
-                <h3 class="text-2xl font-serif text-navy mb-8 border-l-4 border-gold pl-4 flex items-center gap-3">
-                    Consultoría Nacional <span
-                        class="text-sm font-sans font-normal text-slate-400 tracking-normal uppercase bg-slate-100 px-3 py-1 rounded-full">Core
-                        Business</span>
-                </h3>
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Service 1 -->
-                    <div
-                        class="group p-8 border border-slate-100 bg-slate-50/50 hover:bg-white transition-all duration-300 hover:shadow-xl hover:shadow-slate-200/50 relative overflow-hidden rounded-sm">
-                        <div
-                            class="absolute top-0 right-0 p-4 opacity-[0.03] text-8xl group-hover:opacity-[0.06] transition-opacity rotate-12">
-                            <i class="fas fa-file-invoice-dollar"></i>
-                        </div>
-                        <div class="relative z-10">
-                            <div
-                                class="w-12 h-12 bg-navy text-white flex items-center justify-center rounded-sm mb-6 group-hover:bg-gold transition-colors duration-300 shadow-lg">
-                                <i class="fas fa-file-contract"></i>
-                            </div>
-                            <h3 class="text-xl font-bold mb-3 text-navy">Cumplimiento Tributario</h3>
-                            <p class="text-sm text-slate-600 mb-5 leading-relaxed">Gestión prolija de obligaciones
-                                mensuales y anuales (<b>F22 y F29</b>). Aseguramos consistencia total ante el SII.</p>
-                            <ul class="text-xs text-slate-500 space-y-2">
-                                <li class="flex items-center gap-2"><i class="fas fa-check text-gold text-[10px]"></i>
-                                    Declaraciones Juradas</li>
-                                <li class="flex items-center gap-2"><i class="fas fa-check text-gold text-[10px]"></i>
-                                    Determinación RLI</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Service 2 -->
-                    <div
-                        class="group p-8 border border-slate-100 bg-slate-50/50 hover:bg-white transition-all duration-300 hover:shadow-xl hover:shadow-slate-200/50 relative overflow-hidden rounded-sm">
-                        <div
-                            class="absolute top-0 right-0 p-4 opacity-[0.03] text-8xl group-hover:opacity-[0.06] transition-opacity rotate-12">
-                            <i class="fas fa-calculator"></i>
-                        </div>
-                        <div class="relative z-10">
-                            <div
-                                class="w-12 h-12 bg-navy text-white flex items-center justify-center rounded-sm mb-6 group-hover:bg-gold transition-colors duration-300 shadow-lg">
-                                <i class="fas fa-chart-bar"></i>
-                            </div>
-                            <h3 class="text-xl font-bold mb-3 text-navy">Rentas Empresariales</h3>
-                            <p class="text-sm text-slate-600 mb-5 leading-relaxed">Análisis de Capital Propio
-                                Tributario. Estrategias de retiro y distribución de utilidades eficientes.</p>
-                            <ul class="text-xs text-slate-500 space-y-2">
-                                <li class="flex items-center gap-2"><i class="fas fa-check text-gold text-[10px]"></i>
-                                    Regímenes 14A/14D</li>
-                                <li class="flex items-center gap-2"><i class="fas fa-check text-gold text-[10px]"></i>
-                                    Trazabilidad de Créditos</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Service 3 -->
-                    <div
-                        class="group p-8 border border-slate-100 bg-slate-50/50 hover:bg-white transition-all duration-300 hover:shadow-xl hover:shadow-slate-200/50 relative overflow-hidden rounded-sm">
-                        <div
-                            class="absolute top-0 right-0 p-4 opacity-[0.03] text-8xl group-hover:opacity-[0.06] transition-opacity rotate-12">
-                            <i class="fas fa-gavel"></i>
-                        </div>
-                        <div class="relative z-10">
-                            <div
-                                class="w-12 h-12 bg-navy text-white flex items-center justify-center rounded-sm mb-6 group-hover:bg-gold transition-colors duration-300 shadow-lg">
-                                <i class="fas fa-balance-scale"></i>
-                            </div>
-                            <h3 class="text-xl font-bold mb-3 text-navy">Defensa Tributaria</h3>
-                            <p class="text-sm text-slate-600 mb-5 leading-relaxed">Representación experta en
-                                fiscalizaciones. Contestación de citaciones y liquidaciones.</p>
-                            <ul class="text-xs text-slate-500 space-y-2">
-                                <li class="flex items-center gap-2"><i class="fas fa-check text-gold text-[10px]"></i>
-                                    RAV y RAF</li>
-                                <li class="flex items-center gap-2"><i class="fas fa-check text-gold text-[10px]"></i>
-                                    Liberación de Observaciones</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Financial Services Section (NEW) -->
-            <div class="mb-20">
-                <h3 class="text-2xl font-serif text-navy mb-8 border-l-4 border-gold pl-4 flex items-center gap-3">
-                    Consultoría Financiera & Control de Gestión <span
-                        class="text-sm font-sans font-normal text-white tracking-normal uppercase bg-gold px-3 py-1 rounded-full shadow-md">Gestión
-                        Económica</span>
-                </h3>
-
-                <div class="bg-navy rounded-sm p-8 md:p-12 relative overflow-hidden">
-                    <!-- Background Elements -->
-                    <div
-                        class="absolute top-0 right-0 w-96 h-96 bg-blue-900/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2">
-                    </div>
-
-                    <div class="relative z-10 grid md:grid-cols-2 lg:grid-cols-3 gap-10">
-                        <!-- Financial Stack 1 -->
-                        <div class="border-l border-white/10 pl-6 hover:border-gold transition-colors duration-300">
-                            <div class="text-gold text-2xl mb-4"><i class="fas fa-file-contract"></i></div>
-                            <h4 class="text-white font-bold text-lg mb-3">Estados Financieros</h4>
-                            <p class="text-slate-400 text-sm mb-4">Elaboración y análisis bajo normativa vigente para
-                                una visión clara de la salud económica.</p>
-                            <ul class="text-xs text-slate-500 space-y-1">
-                                <li>• Estado de Situación & Resultados</li>
-                                <li>• Flujo de Caja & Cambios en Patrimonio</li>
-                                <li>• Notas Explicativas</li>
-                            </ul>
-                        </div>
-
-                        <!-- Financial Stack 2 -->
-                        <div class="border-l border-white/10 pl-6 hover:border-gold transition-colors duration-300">
-                            <div class="text-gold text-2xl mb-4"><i class="fas fa-chart-line"></i></div>
-                            <h4 class="text-white font-bold text-lg mb-3">Análisis Financiero Avanzado</h4>
-                            <p class="text-slate-400 text-sm mb-4">Evaluación profunda del desempeño para decisiones de
-                                inversión y financiamiento.</p>
-                            <ul class="text-xs text-slate-500 space-y-1">
-                                <li>• Análisis Vertical y Horizontal</li>
-                                <li>• Ratios (Liquidez, Solvencia, Rentabilidad)</li>
-                                <li>• Estructura de Capital y Flujos</li>
-                            </ul>
-                        </div>
-
-                        <!-- Financial Stack 3 -->
-                        <div class="border-l border-white/10 pl-6 hover:border-gold transition-colors duration-300">
-                            <div class="text-gold text-2xl mb-4"><i class="fas fa-chess-board"></i></div>
-                            <h4 class="text-white font-bold text-lg mb-3">Control de Gestión</h4>
-                            <p class="text-slate-400 text-sm mb-4">Herramientas para alinear los resultados financieros
-                                con los objetivos estratégicos.</p>
-                            <ul class="text-xs text-slate-500 space-y-1">
-                                <li>• Dashboards & Reportes Gerenciales</li>
-                                <li>• Detección de Riesgos y Mejoras</li>
-                                <li>• Planificación Financiera</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- International & Corporate Services Grid -->
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-navy text-white p-10 rounded-sm relative overflow-hidden group">
-                    <div
-                        class="absolute top-0 right-0 p-6 opacity-10 text-9xl group-hover:opacity-20 transition-opacity rotate-12 transform translate-x-10 -translate-y-10">
-                        <i class="fas fa-globe"></i>
-                    </div>
-                    <div class="relative z-10">
-                        <h3 class="text-2xl font-serif italic mb-6">Tributación Internacional</h3>
-                        <p class="text-slate-300 font-light mb-8 leading-relaxed">
-                            Dominamos la aplicación de <b>Convenios (CDT)</b> y la normativa chilena para capitales
-                            globales.
-                        </p>
-                        <ul class="space-y-4 mb-8">
-                            <li class="flex items-start gap-3">
-                                <span class="text-gold mt-1"><i class="fas fa-arrow-right"></i></span>
-                                <div>
-                                    <strong class="block text-white text-sm uppercase tracking-wide">Impuesto Adicional
-                                        & F50</strong>
-                                    <span class="text-xs text-slate-400">Retenciones por pagos al exterior (royalties,
-                                        servicios).</span>
-                                </div>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <span class="text-gold mt-1"><i class="fas fa-arrow-right"></i></span>
-                                <div>
-                                    <strong class="block text-white text-sm uppercase tracking-wide">Precios de
-                                        Transferencia</strong>
-                                    <span class="text-xs text-slate-400">Declaraciones Juradas y principio Arm's
-                                        Length.</span>
-                                </div>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <span class="text-gold mt-1"><i class="fas fa-arrow-right"></i></span>
-                                <div>
-                                    <strong class="block text-white text-sm uppercase tracking-wide">Inversiones
-                                        Outbound</strong>
-                                    <span class="text-xs text-slate-400">Estructuras de financiamiento y reorganización
-                                        global.</span>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div
-                    class="bg-gradient-to-br from-slate-100 to-white border border-slate-200 p-10 rounded-sm relative overflow-hidden group">
-                    <div
-                        class="absolute top-0 right-0 p-6 opacity-[0.05] text-9xl group-hover:opacity-10 transition-opacity rotate-12 transform translate-x-10 -translate-y-10">
-                        <i class="fas fa-chess"></i>
-                    </div>
-                    <div class="relative z-10">
-                        <h3 class="text-2xl font-serif text-navy italic mb-6">Consultoría Estratégica</h3>
-                        <p class="text-slate-600 font-light mb-8 leading-relaxed">
-                            Servicios de alta especialización para momentos clave de su empresa, maximizando el valor
-                            del negocio.
-                        </p>
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                            <div class="bg-white p-4 shadow-sm border-l-2 border-gold">
-                                <h4 class="font-bold text-navy text-sm uppercase mb-1">Reorganizaciones</h4>
-                                <p class="text-xs text-slate-500">Fusiones, divisiones y transformaciones eficientes.
-                                </p>
-                            </div>
-                            <div class="bg-white p-4 shadow-sm border-l-2 border-gold">
-                                <h4 class="font-bold text-navy text-sm uppercase mb-1">Impuestos Sustitutivos</h4>
-                                <p class="text-xs text-slate-500">Regularización FUT vía ISFUT / ISIF.</p>
-                            </div>
-                            <div class="bg-white p-4 shadow-sm border-l-2 border-gold">
-                                <h4 class="font-bold text-navy text-sm uppercase mb-1">Mayor Valor</h4>
-                                <p class="text-xs text-slate-500">Análisis Art. 107 LIR en venta de activos.</p>
-                            </div>
-                            <div class="bg-white p-4 shadow-sm border-l-2 border-gold">
-                                <h4 class="font-bold text-navy text-sm uppercase mb-1">Due Diligence</h4>
-                                <p class="text-xs text-slate-500">Auditoría de compra/venta de empresas.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="answer-card reveal reveal-d1">
+                <span class="kicker">Nuestra respuesta</span>
+                <p class="big-claim">«No analizamos áreas.<br>Analizamos decisiones.»</p>
+                <p>Integramos información financiera, tributaria, operativa y estratégica para entregar claridad
+                    antes de ejecutar una decisión. Porque las contingencias rara vez nacen por falta de información:
+                    nacen cuando una decisión se analiza desde una sola perspectiva.</p>
             </div>
         </div>
     </section>
 
-    <section id="contacto" class="py-24 px-6 bg-slate-50">
-        <div class="container mx-auto">
-            <div
-                class="max-w-6xl mx-auto bg-white shadow-[0_30px_60px_-15px_rgba(0,0,0,0.1)] flex flex-col md:flex-row overflow-hidden rounded-sm">
-                <div class="bg-navy p-12 text-white md:w-2/5 flex flex-col justify-between">
-                    <div>
-                        <span
-                            class="gold-accent text-xs font-bold tracking-[0.4em] uppercase mb-4 block">Hablemos</span>
-                        <h2 class="text-4xl mb-8 font-serif leading-tight">Agende una Sesión Técnica</h2>
-                        <p class="text-slate-400 mb-12 font-light leading-relaxed">Analicemos su situación tributaria
-                            actual y diseñemos juntos una estrategia a medida.</p>
-                    </div>
-
-                    <div class="space-y-8">
-                        <div class="flex items-center gap-6 group">
-                            <div
-                                class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center text-gold group-hover:bg-gold group-hover:text-white transition-all">
-                                <i class="fas fa-envelope text-lg"></i>
-                            </div>
-                            <div>
-                                <p class="text-[10px] text-slate-500 uppercase font-bold tracking-widest">Email Directo
-                                </p>
-                                <a href="mailto:admin@arriazaconsulting.cl"
-                                    class="text-sm hover:text-gold transition">admin@arriazaconsulting.cl</a>
-                            </div>
-                        </div>
-                        <div class="flex items-center gap-6 group">
-                            <div
-                                class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center text-gold group-hover:bg-gold group-hover:text-white transition-all">
-                                <i class="fas fa-phone-alt text-lg"></i>
-                            </div>
-                            <div>
-                                <p class="text-[10px] text-slate-500 uppercase font-bold tracking-widest">Teléfono /
-                                    WhatsApp</p>
-                                <a href="tel:940921033" class="text-sm hover:text-gold transition">+56 9 4092 1033</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="p-12 md:w-3/5">
-                    <form action="https://formsubmit.co/admin@arriazaconsulting.cl" method="POST" class="space-y-8">
-                        <input type="hidden" name="_next" value="https://arriazaconsulting.cl/gracias.html">
-                        <input type="hidden" name="_subject" value="Nuevo contacto desde sitio web">
-                        <input type="hidden" name="_captcha" value="false">
-                        <div class="grid md:grid-cols-2 gap-8">
-                            <div class="relative z-0 group">
-                                <input type="text" name="nombre"
-                                    class="block py-2.5 px-0 w-full text-sm text-slate-900 bg-transparent border-0 border-b-2 border-slate-200 appearance-none focus:outline-none focus:ring-0 focus:border-gold peer"
-                                    placeholder=" " required />
-                                <label for="nombre"
-                                    class="peer-focus:font-medium absolute text-xs font-bold uppercase tracking-widest text-slate-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-gold peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Nombre
-                                    Completo</label>
-                            </div>
-                            <div class="relative z-0 group">
-                                <input type="text" name="empresa"
-                                    class="block py-2.5 px-0 w-full text-sm text-slate-900 bg-transparent border-0 border-b-2 border-slate-200 appearance-none focus:outline-none focus:ring-0 focus:border-gold peer"
-                                    placeholder=" " />
-                                <label for="empresa"
-                                    class="peer-focus:font-medium absolute text-xs font-bold uppercase tracking-widest text-slate-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-gold peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Empresa</label>
-                            </div>
-                        </div>
-                        <div class="relative z-0 group">
-                            <select name="servicio"
-                                class="block py-2.5 px-0 w-full text-sm text-slate-500 bg-transparent border-0 border-b-2 border-slate-200 appearance-none focus:outline-none focus:ring-0 focus:border-gold peer">
-                                <option value="" disabled selected>Seleccione un servicio de interés</option>
-                                <option>Consultoría Tributaria Nacional</option>
-                                <option>Tributación Internacional y Precios de Transferencia</option>
-                                <option>Defensa / Fiscalización SII</option>
-                                <option>Reorganizaciones y Estrategia</option>
-                            </select>
-                            <label for="servicio"
-                                class="peer-focus:font-medium absolute text-xs font-bold uppercase tracking-widest text-slate-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-gold peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Área
-                                de Interés</label>
-                        </div>
-                        <div class="relative z-0 group">
-                            <textarea name="mensaje" rows="4"
-                                class="block py-2.5 px-0 w-full text-sm text-slate-900 bg-transparent border-0 border-b-2 border-slate-200 appearance-none focus:outline-none focus:ring-0 focus:border-gold peer"
-                                placeholder=" " required></textarea>
-                            <label for="mensaje"
-                                class="peer-focus:font-medium absolute text-xs font-bold uppercase tracking-widest text-slate-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-gold peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Mensaje
-                                o Requerimiento</label>
-                        </div>
-                        <button
-                            class="w-full bg-navy text-white font-bold py-5 uppercase text-xs tracking-[0.2em] hover:bg-gold transition-all duration-300 hover:shadow-xl focus:ring-4 focus:ring-blue-300 rounded-sm">
-                            Enviar Solicitud
-                        </button>
-                    </form>
-                </div>
+    <!-- ============ METODOLOGÍA I.D.E.A. ============ -->
+    <section class="method" id="expertise">
+        <div class="wrap">
+            <div class="sec-head center reveal">
+                <span class="kicker">Nuestra metodología</span>
+                <h2>Metodología <span style="color:var(--gold)">I.D.E.A.</span></h2>
+                <p>Inteligencia para las Decisiones Empresariales Aplicadas: un análisis que integra lo financiero,
+                    tributario, operativo, legal y estratégico para comprender el impacto completo de cada decisión.</p>
+            </div>
+            <div class="method-grid">
+                <article class="method-step reveal">
+                    <span class="num">01</span>
+                    <div class="letter">I</div>
+                    <h3>Interpretar</h3>
+                    <p>Comprender el negocio, su contexto y lo que realmente está en juego detrás de cada decisión.</p>
+                </article>
+                <article class="method-step reveal reveal-d1">
+                    <span class="num">02</span>
+                    <div class="letter">D</div>
+                    <h3>Diagnosticar</h3>
+                    <p>Identificar riesgos y oportunidades en todas las dimensiones: financiera, tributaria, operativa y legal.</p>
+                </article>
+                <article class="method-step reveal reveal-d2">
+                    <span class="num">03</span>
+                    <div class="letter">E</div>
+                    <h3>Evaluar</h3>
+                    <p>Desarrollar soluciones sostenibles, con fundamentos que se sostengan incluso años después.</p>
+                </article>
+                <article class="method-step reveal reveal-d3">
+                    <span class="num">04</span>
+                    <div class="letter">A</div>
+                    <h3>Acompañar</h3>
+                    <p>Respaldar la implementación y defender cada decisión ante fiscalizaciones y revisiones.</p>
+                </article>
             </div>
         </div>
     </section>
 
-    <section id="faq" class="py-24 px-6 bg-white">
-        <div class="container mx-auto max-w-4xl">
-            <div class="text-center mb-16">
-                <span class="gold-accent font-bold tracking-[0.3em] uppercase text-xs">Consultas Técnicas</span>
-                <h2 class="text-4xl text-navy mt-2 italic">Preguntas Frecuentes</h2>
+    <!-- ============ SERVICIOS ============ -->
+    <section id="servicios">
+        <div class="wrap">
+            <div class="sec-head reveal">
+                <span class="kicker">Soluciones</span>
+                <h2>Nuestros servicios</h2>
             </div>
-
-            <div class="space-y-6">
-                <div class="faq-item p-6 border-b border-slate-100 transition-all">
-                    <h4 class="font-bold text-navy mb-2">¿Cómo optimizar utilidades acumuladas vía ISFUT?</h4>
-                    <p class="text-sm text-slate-600">Analizamos su registro de rentas empresariales para aplicar el
-                        Impuesto Sustitutivo, permitiendo el retiro de utilidades con una tasa preferencial y
-                        simplificando su estructura tributaria futura.</p>
-                </div>
-                <div class="faq-item p-6 border-b border-slate-100 transition-all">
-                    <h4 class="font-bold text-navy mb-2">¿Qué beneficios otorgan los Convenios para Evitar la Doble
-                        Tributación (CDT)?</h4>
-                    <p class="text-sm text-slate-600">Permiten reducir las tasas de retención de Impuesto Adicional en
-                        pagos al extranjero y garantizan que un mismo ingreso no sea gravado doblemente por dos
-                        jurisdicciones distintas.</p>
-                </div>
-                <div class="faq-item p-6 border-b border-slate-100 transition-all">
-                    <h4 class="font-bold text-navy mb-2">¿Qué hacer ante una fiscalización del SII por operaciones
-                        internacionales?</h4>
-                    <p class="text-sm text-slate-600">Realizamos una auditoría preventiva de los respaldos, validamos la
-                        consistencia normativa de las operaciones y representamos técnicamente a la empresa para
-                        desvirtuar observaciones del ente fiscalizador.</p>
-                </div>
-                <div class="faq-item p-6 border-b border-slate-100 transition-all">
-                    <h4 class="font-bold text-navy mb-2">¿Cuándo es obligatorio el reporte de Precios de Transferencia?
-                    </h4>
-                    <p class="text-sm text-slate-600">Es exigible cuando existen operaciones con partes relacionadas en
-                        el extranjero. Evaluamos si sus transacciones cumplen con el principio de plena competencia para
-                        evitar ajustes y multas.</p>
-                </div>
+            <div class="services-grid">
+                <article class="service reveal">
+                    <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1" fill="currentColor"/></svg></div>
+                    <h3>Estrategia Tributaria</h3>
+                    <p>Planificación fiscal eficiente y cumplimiento normativo para optimizar resultados con fundamentos sólidos.</p>
+                </article>
+                <article class="service reveal reveal-d1">
+                    <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 20V9M10 20V4M16 20v-9M21 20H3"/></svg></div>
+                    <h3>Control de Decisiones</h3>
+                    <p>Información financiera y tributaria integrada para apoyar cada decisión estratégica de la empresa.</p>
+                </article>
+                <article class="service reveal reveal-d2">
+                    <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7l8-4z"/><path d="M9 12l2 2 4-4"/></svg></div>
+                    <h3>Gestión de Riesgos</h3>
+                    <p>Identificamos, evaluamos y mitigamos los riesgos tributarios y financieros antes de que afecten tu empresa.</p>
+                </article>
+                <article class="service reveal">
+                    <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6"/></svg></div>
+                    <h3>Fiscalizaciones y Defensa</h3>
+                    <p>Acompañamiento integral ante procesos del SII, defendiendo tus derechos e intereses con evidencia.</p>
+                </article>
+                <article class="service reveal reveal-d1">
+                    <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 019 9h-9V3z" fill="currentColor" stroke="none" opacity=".35"/><path d="M12 12L6 18"/></svg></div>
+                    <h3>Reportes y Análisis</h3>
+                    <p>Reportes a medida para monitorear, proyectar y tomar decisiones con mayor confianza.</p>
+                </article>
+                <article class="service reveal reveal-d2">
+                    <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 21V7a2 2 0 012-2h4a2 2 0 012 2v14M4 21h16M12 3v2M9 11h.01M15 11h.01M9 15h.01M15 15h.01"/></svg></div>
+                    <h3>Asesoría Corporativa</h3>
+                    <p>Soluciones integrales para estructuración societaria, inversión y operaciones especiales.</p>
+                </article>
             </div>
         </div>
     </section>
 
-    <footer class="bg-navy text-white py-16 px-6 border-t border-white/5">
-        <div class="container mx-auto">
-            <div class="flex flex-col md:flex-row justify-between items-center mb-12">
-                <div class="mb-8 md:mb-0 text-center md:text-left">
-                    <span class="text-2xl font-bold uppercase tracking-tighter block mb-2">Arriaza <span
-                            class="gold-accent">Consulting</span></span>
-                    <p class="text-xs text-slate-500 uppercase tracking-widest max-w-xs mx-auto md:mx-0">Estrategia
-                        tributaria con visión de negocio.</p>
-                </div>
-                <div class="flex space-x-6">
-                    <a href="#"
-                        class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white hover:bg-gold hover:text-white transition-all"><i
-                            class="fab fa-linkedin-in"></i></a>
-                    <a href="#"
-                        class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white hover:bg-gold hover:text-white transition-all"><i
-                            class="fab fa-twitter"></i></a>
-                    <a href="#"
-                        class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white hover:bg-gold hover:text-white transition-all"><i
-                            class="fab fa-instagram"></i></a>
-                </div>
+    <!-- ============ CLIENTES + STATS ============ -->
+    <section class="clients" id="clientes">
+        <div class="wrap">
+            <div class="sec-head center reveal">
+                <span class="kicker">Confianza</span>
+                <h2>Empresas que trabajan con nosotros</h2>
             </div>
-
-            <div
-                class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-[10px] text-slate-500 uppercase tracking-widest gap-4">
-                <div>
-                    © 2026 Arriaza Consulting. Todos los derechos reservados.
-                </div>
-                <div class="flex gap-6 flex-wrap justify-end">
-                    <a href="politica-privacidad.html" class="hover:text-white transition">Política de Privacidad</a>
-                    <a href="terminos.html" class="hover:text-white transition">Términos de Servicio</a>
-                    <a href="agencia-digital.html" class="hover:text-white transition">Agencia Digital</a>
-                </div>
+            <div class="clients-grid">
+                <div class="client-card reveal"><span class="logo-mono">E</span><strong>Espacios</strong><span>Constructora</span></div>
+                <div class="client-card reveal reveal-d1"><span class="logo-mono">V</span><strong>Condominio Villaseca</strong><span>Administración</span></div>
+                <div class="client-card reveal reveal-d2"><span class="logo-mono">C</span><strong>Control Común</strong><span>Servicios</span></div>
+                <div class="client-card reveal reveal-d3"><span class="logo-mono">P</span><strong>Empanadas de Pamela Díaz</strong><span>Restaurante</span></div>
             </div>
+            <div class="stats reveal">
+                <div class="stat"><strong><em data-count="10">0</em>+</strong><span>Empresas y profesionales asesorados</span></div>
+                <div class="stat"><strong><em data-count="80">0</em>+</strong><span>Procesos de fiscalización acompañados</span></div>
+                <div class="stat"><strong><em data-count="10">0</em>+</strong><span>Años de experiencia combinada</span></div>
+                <div class="stat"><strong><em data-count="100">0</em>%</strong><span>Resultados éticos y sostenibles</span></div>
+            </div>
+        </div>
+    </section>
 
-            <!-- Full Width Designer Credit -->
-            <div class="mt-12 pt-6 border-t border-white/5 text-center">
-                <a href="https://paginasfast.cl" target="_blank" rel="noopener"
-                    class="group inline-flex items-center gap-2 text-[10px] text-slate-600 hover:text-gold transition-all duration-300 uppercase tracking-[0.2em]"
-                    title="Agencia de Diseño Web Profesional">
-                    <span class="">Diseño & Desarrollo</span>
-                    <span class="w-1 h-1 bg-gold rounded-full opacity-50"></span>
-                    <span class="font-bold">PaginasFast.cl</span>
+    <!-- ============ LIDERAZGO ============ -->
+    <section class="leader" id="liderazgo">
+        <div class="wrap leader-grid">
+            <div class="leader-visual reveal">
+                <!-- FOTO PROVISORIA (Unsplash) — reemplazar por la foto real de Regina -->
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=900&q=80"
+                    alt="Regina Pastora Arriaza Benítez, fundadora de Arriaza Consulting" width="540" height="675">
+            </div>
+            <div>
+                <span class="kicker reveal">Liderazgo</span>
+                <h2 class="reveal">Experiencia, criterio y compromiso con cada decisión.</h2>
+                <p class="bio reveal reveal-d1">Arriaza Consulting nació de una idea: las empresas necesitan comprender
+                    las consecuencias de sus decisiones antes de ejecutarlas. Bajo el liderazgo de
+                    <strong>Regina Pastora Arriaza Benítez</strong> desarrollamos la metodología I.D.E.A., que integra
+                    el análisis financiero, tributario, operativo y estratégico para fortalecer el criterio empresarial.</p>
+                <ul class="creds reveal reveal-d2">
+                    <li>Contadora Auditora</li>
+                    <li>Ingeniera en Control de Gestión</li>
+                    <li>Magíster en Tributación</li>
+                    <li>Diplomada en IFRS</li>
+                    <li>Diplomada en Comunicación Estratégica</li>
+                </ul>
+                <div class="signature reveal reveal-d2">Regina Arriaza</div>
+                <a class="btn btn-ghost reveal reveal-d3" href="#contacto">Conversemos
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
                 </a>
             </div>
         </div>
+    </section>
+
+    <!-- ============ CITA ============ -->
+    <section class="quote-band">
+        <div class="wrap reveal">
+            <blockquote>
+                <span class="mark">“</span>
+                La información por sí sola no genera valor. La comprensión y el criterio transforman decisiones en
+                <span class="gold">resultados sostenibles.</span>
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- ============ CTA FINAL ============ -->
+    <section class="cta" id="contacto">
+        <div class="wrap cta-grid">
+            <div class="reveal">
+                <span class="kicker">Decisiones con fundamentos. Empresas con futuro.</span>
+                <h2>Hablemos de tus decisiones,<br><span class="gold">hablemos de tu futuro.</span></h2>
+                <p>Agendemos una reunión y evaluemos juntos cómo la metodología I.D.E.A. puede fortalecer las
+                    decisiones de tu empresa, con claridad y seguridad.</p>
+            </div>
+            <div class="cta-actions reveal reveal-d1">
+                <a class="btn btn-gold" style="justify-content:center;"
+                    href="https://wa.me/56940921033?text=Hola,%20quisiera%20agendar%20una%20reuni%C3%B3n%20con%20Arriaza%20Consulting.">
+                    Agendar reunión
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </a>
+                <a class="btn btn-ghost" style="justify-content:center;" href="mailto:admin@arriazaconsulting.cl">Escríbenos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer>
+        <div class="wrap foot-grid">
+            <div class="foot-brand">
+                <a href="#inicio" class="brand">
+                    <span class="brand-mark">A</span>
+                    <span>
+                        <span class="brand-name">ARRIAZA</span>
+                        <span class="brand-sub">Consulting</span>
+                    </span>
+                </a>
+                <p>Estrategia Tributaria &amp; Control de Decisiones Empresariales.</p>
+                <div class="socials">
+                    <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.2 8h4.6v14.8H.2V8zm7.6 0h4.4v2h.06c.62-1.16 2.12-2.4 4.36-2.4 4.66 0 5.52 3.07 5.52 7.06v8.14h-4.6v-7.2c0-1.72-.04-3.94-2.4-3.94-2.4 0-2.77 1.87-2.77 3.8v7.34H7.8V8z"/></svg></a>
+                    <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.8" cy="6.2" r="1.2" fill="currentColor" stroke="none"/></svg></a>
+                    <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 22v-8h2.7l.4-3.2h-3.1V8.7c0-.93.26-1.56 1.6-1.56h1.7V4.3c-.3-.04-1.3-.13-2.47-.13-2.45 0-4.13 1.5-4.13 4.24v2.4H7.5V14h2.7v8h3.3z"/></svg></a>
+                    <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 7.5s-.23-1.63-.94-2.35c-.9-.94-1.9-.95-2.36-1C16.4 3.9 12 3.9 12 3.9h-.01s-4.4 0-7.7.25c-.46.05-1.46.06-2.36 1C1.22 5.87 1 7.5 1 7.5S.77 9.4.77 11.32v1.8C.77 15.03 1 16.94 1 16.94s.22 1.63.93 2.35c.9.94 2.08.9 2.61 1 1.9.18 7.46.24 7.46.24s4.4-.01 7.7-.25c.46-.06 1.46-.07 2.36-1 .71-.73.94-2.35.94-2.35s.23-1.92.23-3.83v-1.8C23.23 9.4 23 7.5 23 7.5zM9.8 15.3V8.6l6.2 3.36L9.8 15.3z"/></svg></a>
+                </div>
+            </div>
+            <div>
+                <h4>Enlaces</h4>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#expertise">Expertise</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#clientes">Clientes</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Servicios</h4>
+                <ul>
+                    <li><a href="#servicios">Estrategia Tributaria</a></li>
+                    <li><a href="#servicios">Control de Decisiones</a></li>
+                    <li><a href="#servicios">Gestión de Riesgos</a></li>
+                    <li><a href="#servicios">Fiscalizaciones y Defensa</a></li>
+                    <li><a href="#servicios">Reportes y Análisis</a></li>
+                    <li><a href="#servicios">Asesoría Corporativa</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Contacto</h4>
+                <ul class="foot-contact" style="display:grid;gap:14px;">
+                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 01-2.2 2A19.8 19.8 0 012 4.2 2 2 0 014 2h3.1a2 2 0 012 1.7c.13.96.36 1.9.7 2.8a2 2 0 01-.45 2.1L8.1 9.9a16 16 0 006 6l1.3-1.25a2 2 0 012.1-.45c.9.34 1.84.57 2.8.7a2 2 0 011.7 2z"/></svg>
+                        <a href="tel:+56940921033">+56 9 4092 1033</a></li>
+                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 6L22 7"/></svg>
+                        <a href="mailto:admin@arriazaconsulting.cl">admin@arriazaconsulting.cl</a></li>
+                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-5.3-7-11a7 7 0 1114 0c0 5.7-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+                        Santiago de Chile</li>
+                </ul>
+                <p class="foot-quote">«La comprensión y el criterio transforman decisiones en resultados sostenibles.»</p>
+            </div>
+        </div>
+        <div class="foot-bottom wrap">
+            © 2026 Arriaza Consulting. Todos los derechos reservados. ·
+            <a href="politica-privacidad">Política de privacidad</a> · <a href="terminos">Términos</a>
+        </div>
     </footer>
 
+    <!-- ============ Flotantes ============ -->
+    <div class="floaters">
+        <a class="f-phone" href="tel:+56940921033" aria-label="Llamar">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 01-2.2 2A19.8 19.8 0 012 4.2 2 2 0 014 2h3.1a2 2 0 012 1.7c.13.96.36 1.9.7 2.8a2 2 0 01-.45 2.1L8.1 9.9a16 16 0 006 6l1.3-1.25a2 2 0 012.1-.45c.9.34 1.84.57 2.8.7a2 2 0 011.7 2z"/></svg>
+        </a>
+        <a class="f-wsp" href="https://wa.me/56940921033?text=Hola,%20necesito%20asesor%C3%ADa%20para%20mi%20empresa." aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2a9.9 9.9 0 00-8.5 15L2 22l5.15-1.5A9.94 9.94 0 1012.04 2zm5.8 14.1c-.24.68-1.4 1.3-1.94 1.35-.5.05-1.13.24-3.8-.8-3.2-1.26-5.24-4.53-5.4-4.74-.16-.21-1.3-1.73-1.3-3.3 0-1.57.83-2.34 1.12-2.66.3-.32.64-.4.85-.4h.61c.2 0 .46-.07.72.55.27.64.9 2.2.98 2.36.08.16.13.35.03.56-.1.21-.16.34-.32.53-.16.19-.34.42-.48.56-.16.16-.33.34-.14.66.19.32.83 1.37 1.78 2.22 1.22 1.09 2.25 1.43 2.57 1.59.32.16.5.13.69-.08.19-.21.79-.92 1-1.24.21-.32.42-.26.7-.16.29.11 1.85.87 2.17 1.03.32.16.53.24.61.37.08.14.08.78-.16 1.44z"/></svg>
+        </a>
+    </div>
+
     <script>
-        // Animación de aparición al hacer scroll
-        const reveals = document.querySelectorAll('.reveal');
+        // Header sólido al hacer scroll
+        const header = document.getElementById('header');
+        const onScroll = () => header.classList.toggle('solid', window.scrollY > 40);
+        window.addEventListener('scroll', onScroll, { passive: true });
+        onScroll();
 
-        function reveal() {
-            var windowHeight = window.innerHeight;
-            var elementVisible = 150;
+        // Menú móvil
+        const toggle = document.getElementById('navToggle');
+        const links = document.getElementById('navLinks');
+        toggle.addEventListener('click', () => links.classList.toggle('open'));
+        links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
 
-            reveals.forEach(el => {
-                var elementTop = el.getBoundingClientRect().top;
-                if (elementTop < windowHeight - elementVisible) {
-                    el.classList.add('active');
-                }
+        // Reveal al entrar en pantalla
+        const io = new IntersectionObserver(entries => {
+            entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('active'); io.unobserve(e.target); } });
+        }, { threshold: .15 });
+        document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+        // Contadores de las cifras
+        const animateCount = el => {
+            const target = +el.dataset.count, dur = 1200, t0 = performance.now();
+            const tick = now => {
+                const p = Math.min((now - t0) / dur, 1);
+                el.textContent = Math.round(target * (1 - Math.pow(1 - p, 3)));
+                if (p < 1) requestAnimationFrame(tick);
+            };
+            requestAnimationFrame(tick);
+        };
+        const ioStats = new IntersectionObserver(entries => {
+            entries.forEach(e => {
+                if (e.isIntersecting) { e.target.querySelectorAll('[data-count]').forEach(animateCount); ioStats.unobserve(e.target); }
             });
-        }
-
-        window.addEventListener('scroll', reveal);
-        // Trigger once on load
-        reveal();
+        }, { threshold: .4 });
+        document.querySelectorAll('.stats').forEach(el => ioStats.observe(el));
     </script>
 </body>
 
