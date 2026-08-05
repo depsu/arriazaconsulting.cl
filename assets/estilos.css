@@ -177,8 +177,8 @@ footer .brand { color: #fff; }
 .t-about p { font-size: 13px; color: rgba(255, 255, 255, .82); margin-bottom: 12px; }
 .t-about .signature { font-family: 'Allura', cursive; font-size: 40px; color: var(--gold-soft); margin: 10px 0 18px; }
 .t-about .photo { position: absolute; right: 0; top: 0; bottom: 0; width: 64%; }
-/* Encuadre centrado en el rostro: la columna es angosta y cover recorta los lados */
-.t-about .photo img { width: 100%; height: 100%; object-fit: cover; object-position: 54% 6%; }
+/* La escena es apaisada y la columna angosta: encuadra en la asesora, a la derecha del cuadro */
+.t-about .photo img { width: 100%; height: 100%; object-fit: cover; object-position: 62% center; }
 .t-about .photo::before {
     content: ""; position: absolute; inset: 0; z-index: 1;
     background: linear-gradient(90deg, var(--navy-950) 0%, rgba(10, 16, 31, .5) 14%, transparent 38%);

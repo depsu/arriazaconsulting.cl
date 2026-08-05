@@ -337,15 +337,17 @@ def leer_casos():
     return por_titulo
 
 
+# Los casos van SIN imagen por pedido de la clienta (WhatsApp 05-08-2026): las piezas
+# gráficas competían con el texto, que es lo que ella quiere que se lea.
 CASOS_META = [
     ("fiscalizacion-sii-otros-activos",
      "Cuando el verdadero riesgo no estaba en el impuesto",
      "Caso real: una fiscalización del SII sobre una partida en «Otros Activos» y cómo se acreditó su naturaleza económica.",
-     "Fiscalización SII", "img/caso-fiscalizacion.jpg"),
+     "Fiscalización SII", None),
     ("decisiones-que-explican-los-resultados",
      "Cuando el problema no estaba en los números",
      "Caso real: una empresa con rentabilidad a la baja donde el origen no estaba en las cifras, sino en decisiones analizadas por separado.",
-     "Control de decisiones", "img/caso-decisiones.jpg"),
+     "Control de decisiones", None),
     ("reorganizacion-empresarial-razon-de-negocios",
      "Una reorganización empresarial no siempre fracasa por su estructura",
      "Caso real: una reorganización societaria correctamente estructurada que no podía acreditar su legítima razón de negocios.",
