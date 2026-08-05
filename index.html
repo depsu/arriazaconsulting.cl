@@ -252,24 +252,23 @@
 
         /* ============ Stats + CTA ============ */
         .band { background: #fff; border-bottom: 1px solid var(--line-soft); }
-        .band-grid { display: grid; grid-template-columns: 57% 43%; align-items: stretch; }
-        .stats {
-            display: grid; grid-template-columns: repeat(4, 1fr);
-            padding: 54px 34px 54px calc(max((100vw - 1280px) / 2, 0px) + 28px); gap: 10px;
-        }
-        .stat { text-align: center; padding: 0 10px; border-right: 1px solid var(--line-soft); }
+        /* Indicadores: 4 pilares a todo el ancho sobre gris claro */
+        .stats { background: #F5F5F4; padding: 72px 0; }
+        .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); max-width: 1280px; margin: 0 auto; padding: 0 28px; }
+        .stat { text-align: center; padding: 0 18px; border-right: 1px solid #DFDFDD; }
         .stat:last-child { border-right: none; }
-        .stat .s-icon { width: 34px; height: 34px; margin: 0 auto 12px; color: var(--gold-deep); }
+        .stat .s-icon { width: 46px; height: 46px; margin: 0 auto 22px; color: var(--gold-deep); }
         .stat .s-icon svg { width: 100%; height: 100%; }
-        .stat strong { font-family: 'Playfair Display', serif; font-size: 40px; color: var(--navy-900); display: block; line-height: 1.05; margin-bottom: 8px; }
-        .stat span { font-size: 11.5px; color: var(--ink-soft); line-height: 1.45; display: block; }
+        .stat strong { font-family: 'Playfair Display', serif; font-weight: 600; font-size: clamp(20px, 1.85vw, 26px); color: var(--navy-900); display: block; line-height: 1.1; margin-bottom: 12px; white-space: nowrap; }
+        .stat b { display: block; font-size: 14px; font-weight: 600; color: var(--navy-900); margin-bottom: 14px; }
+        .stat span { font-size: 14px; color: var(--ink-soft); line-height: 1.6; display: block; }
         .band-cta { position: relative; background: var(--cloud); overflow: hidden; display: flex; align-items: center; }
-        .band-cta .bg { position: absolute; right: 0; top: 0; bottom: 0; width: 55%; }
+        .band-cta .bg { position: absolute; right: 0; top: 0; bottom: 0; width: 46%; }
         .band-cta .bg img { width: 100%; height: 100%; object-fit: cover; opacity: .9; }
         .band-cta .bg::before { content: ""; position: absolute; inset: 0; z-index: 1; background: linear-gradient(90deg, var(--cloud) 0%, rgba(238, 240, 244, .82) 45%, rgba(238, 240, 244, .25) 100%); }
-        .band-cta .inner { position: relative; z-index: 2; display: grid; grid-template-columns: 1fr auto; gap: 26px; align-items: center; padding: 46px 44px 46px 44px; width: 100%; }
-        .band-cta h2 { font-size: clamp(22px, 2vw, 30px); color: var(--navy-900); }
-        .band-cta p { font-size: 13px; color: var(--ink-soft); margin-top: 12px; max-width: 330px; }
+        .band-cta .inner { position: relative; z-index: 2; display: grid; grid-template-columns: 1fr auto; gap: 40px; align-items: center; padding: 56px 28px; width: 100%; max-width: 1280px; margin: 0 auto; }
+        .band-cta h2 { font-size: clamp(24px, 2.4vw, 34px); color: var(--navy-900); }
+        .band-cta p { font-size: 14.5px; color: var(--ink-soft); margin-top: 14px; max-width: 430px; }
         .band-cta .actions { display: flex; flex-direction: column; gap: 12px; min-width: 220px; }
 
         /* ============ Footer ============ */
@@ -307,8 +306,10 @@
         @media (max-width: 1080px) {
             .triptych { grid-template-columns: 1fr 1fr; }
             .t-about { grid-column: 1 / -1; min-height: 420px; }
-            .band-grid { grid-template-columns: 1fr; }
-            .stats { padding: 48px 28px; }
+            .stats { padding: 56px 0; }
+            .stats-grid { grid-template-columns: 1fr 1fr; gap: 44px 0; }
+            .stat:nth-child(2) { border-right: none; }
+            .stat:nth-child(-n+2) { padding-bottom: 44px; border-bottom: 1px solid #DFDFDD; }
         }
         @media (max-width: 980px) {
             .hero-grid { grid-template-columns: 1fr; min-height: 0; }
@@ -331,8 +332,9 @@
             .t-about .photo { position: relative; width: 100%; height: 300px; }
             .t-about .photo::before { background: linear-gradient(0deg, var(--navy-950) 0%, transparent 40%); }
             .method-grid { grid-template-columns: 1fr; }
-            .stats { grid-template-columns: 1fr 1fr; gap: 26px 0; }
-            .stat:nth-child(2) { border-right: none; }
+            .stats-grid { grid-template-columns: 1fr; gap: 0; }
+            .stat { border-right: none; padding: 0 8px; }
+            .stat:not(:last-child) { padding-bottom: 38px; margin-bottom: 38px; border-bottom: 1px solid #DFDFDD; }
             .band-cta .inner { grid-template-columns: 1fr; padding: 40px 24px; }
             .foot-grid { grid-template-columns: 1fr; gap: 30px; }
             .hero-actions .btn { width: 100%; }
@@ -538,31 +540,39 @@
         </div>
     </section>
 
-    <!-- ============ CIFRAS + CTA ============ -->
+    <!-- ============ INDICADORES ============ -->
+    <section class="stats">
+        <div class="stats-grid">
+            <div class="stat reveal">
+                <span class="s-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="9.5" cy="8" r="3.4"/><path d="M3 20.5c.7-3.5 3.3-5.5 6.5-5.5s5.8 2 6.5 5.5"/><circle cx="17.2" cy="6.6" r="2.2"/><path d="M16.2 11.6c2.6.3 4.4 2 5 4.6"/></svg></span>
+                <strong><em data-count="10" style="font-style:normal">0</em>+</strong>
+                <b>Empresas asesoradas</b>
+                <span>Clientes que confían en nuestro acompañamiento.</span>
+            </div>
+            <div class="stat reveal reveal-d1">
+                <span class="s-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7.5A1.5 1.5 0 0 1 4.5 6h4.2l2 2.4h8.8A1.5 1.5 0 0 1 21 9.9v8.6a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 18.5v-11Z"/><path d="M3 10.4h18"/></svg></span>
+                <strong>Casos reales</strong>
+                <b>Experiencia aplicada</b>
+                <span>Fiscalizaciones, reorganizaciones y decisiones empresariales.</span>
+            </div>
+            <div class="stat reveal reveal-d2">
+                <span class="s-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9.4 17.5h5.2M10 20.4h4"/><path d="M12 3.2a6 6 0 0 0-3.6 10.8c.5.4.8 1 .9 1.6h5.4c.1-.6.4-1.2.9-1.6A6 6 0 0 0 12 3.2Z"/><path d="M12 .8v1M4.6 4.2l.8.8M19.4 4.2l-.8.8M2.2 11.4h1M20.8 11.4h1"/></svg></span>
+                <strong>Metodología propia</strong>
+                <b>I.D.E.A.</b>
+                <span>Inteligencia para las Decisiones Empresariales Aplicadas.</span>
+            </div>
+            <div class="stat reveal reveal-d3">
+                <span class="s-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20.6 6.4A9 9 0 1 0 21 12"/><path d="M16.6 9.3A5.2 5.2 0 1 0 17 12"/><circle cx="12" cy="12" r="1.4"/><path d="m12 12 8.4-8.4M17.6 3.2l2.8.4.4 2.8"/></svg></span>
+                <strong>Visión integral</strong>
+                <b>Decisiones con fundamentos</b>
+                <span>Analizamos el impacto financiero, tributario, operativo y estratégico.</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
     <div class="band" id="contacto">
         <div class="band-grid">
-            <div class="stats">
-                <div class="stat reveal">
-                    <span class="s-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="9" cy="8" r="3.2"/><path d="M2.5 20c.8-3.2 3.4-5 6.5-5s5.7 1.8 6.5 5"/><circle cx="17" cy="9" r="2.5"/><path d="M15.5 14.6c2.7.2 4.9 1.8 5.7 4.4"/></svg></span>
-                    <strong><em data-count="10" style="font-style:normal">0</em>+</strong>
-                    <span>Empresas y profesionales asesorados.</span>
-                </div>
-                <div class="stat reveal reveal-d1">
-                    <span class="s-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7l8-4z"/><path d="M9 12l2 2 4-4"/></svg></span>
-                    <strong><em data-count="80" style="font-style:normal">0</em>+</strong>
-                    <span>Fiscalizaciones acompañadas en la trayectoria profesional de Regina Arriaza.</span>
-                </div>
-                <div class="stat reveal reveal-d2">
-                    <span class="s-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 20V9M10 20V4M16 20v-9M21 20H3"/></svg></span>
-                    <strong><em data-count="10" style="font-style:normal">0</em>+</strong>
-                    <span>Años de experiencia combinada.</span>
-                </div>
-                <div class="stat reveal reveal-d3">
-                    <span class="s-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.5l2.5 2.5 5-5.5"/></svg></span>
-                    <strong><em data-count="100" style="font-style:normal">0</em>%</strong>
-                    <span>Comprometidos con resultados éticos y sostenibles.</span>
-                </div>
-            </div>
             <div class="band-cta">
                 <div class="bg">
                     <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1000&q=80"
