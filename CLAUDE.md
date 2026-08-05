@@ -51,8 +51,9 @@ Pendientes de contenido (esperando respuesta del cliente):
 4. ✅ Cifras: se reemplazaron por 4 pilares cualitativos, porque las 80 fiscalizaciones
    eran de su carrera y no de la empresa (ella misma lo advirtió).
 5. ⏳ OG image: `og.jpg` sigue siendo la del diseño viejo.
-6. ⚠️ La foto de «Sobre mí» **no es Regina**: es un retrato de stock que ella eligió
-   mientras se toma su foto profesional. El `alt` no afirma que sea ella.
+6. ✅ «Sobre mí» usa una **escena genérica de asesoría** (`img/sobre-mi-asesoria.jpg`)
+   que mandó la clienta el 05-08, en reemplazo del retrato de stock. No retrata a Regina
+   y el `alt` no lo afirma. Se cambia cuando ella tenga su foto profesional.
 
 Dudas completas para el cliente: `docs/mensaje-cliente-dudas.md`.
 
@@ -78,7 +79,7 @@ Indexing API.
 refresh token OAuth) NO la lista. Para que los reportes la vean, hay que darle acceso al
 usuario del OAuth desde la interfaz de Search Console (gestión de Alejandro).
 
-**Ojo con las imágenes de los casos:** son piezas que Regina hace para LinkedIn y llevan
-datos impresos. A `img/caso-fiscalizacion.jpg` se le recortó el pie porque mostraba
-`arriazaconsulting-cl.vercel.app` y `Admin@arriazaconsulting.cl` (ambos obsoletos).
-Revisar eso en cada pieza nueva que mande.
+**Los casos van SIN imagen** por pedido de la clienta (05-08): sus piezas de LinkedIn
+competían con el texto, que es lo que quiere que se lea. Si alguna vez se vuelven a usar,
+ojo: llevan datos impresos y una mostraba `arriazaconsulting-cl.vercel.app` y
+`Admin@arriazaconsulting.cl`, ambos obsoletos.

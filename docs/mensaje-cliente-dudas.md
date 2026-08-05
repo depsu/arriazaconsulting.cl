@@ -34,19 +34,17 @@ API): el canonical, el sitemap y `llms.txt` usan la versión SIN www.
   cualitativos** (versión que ella misma aprobó): `10+ Empresas asesoradas`,
   `Casos reales`, `Metodología propia (I.D.E.A.)` y `Visión integral`. Ya no hay ninguna
   cifra que no se pueda sostener.
-- ⚠️ **La foto no es Regina.** Es un retrato de stock de una persona real, puesto en una
-   sección en primera persona ("Soy Regina Pastora Arriaza Benítez") y firmada. Un
-   visitante asume que es ella. El `alt` ya no afirma que lo sea, pero lo ideal es
-   reemplazarla por una imagen ambiental hasta que tenga su foto profesional.
+- ✅ **RESUELTO — la foto.** El retrato de stock se reemplazó por una escena genérica de
+  asesoría que mandó la clienta (05-08). Ya no hay una cara ajena presentada como Regina.
+  Se cambiará cuando tenga su foto profesional ("quiero ir a un estudio a sacar una foto
+  profesional mía y poner una genérica por mientras").
 
-## Material recibido y NO usado todavía
+## Material recibido — ya publicado
 
-- **3 casos reales** que ella redactó (fiscalización SII / "el problema no estaba en los
-  números" / reorganización empresarial). Están en `docs/casos-reales-cliente.md`. Ella
-  preguntó *"hasta cuántas palabras podría ser"* → falta definir el formato (sección de
-  casos en el home + página por caso).
-- **2 piezas gráficas** de su marca para acompañar los casos:
-  `img/caso-fiscalizacion.jpg` y `img/caso-decisiones.jpg`.
+- **3 casos reales** que ella redactó: publicados en `/casos` con página propia cada uno,
+  con su texto literal. Los revisó y aprobó ("ya vi los casos reales").
+- **2 piezas gráficas** de su marca: NO se usan. Pidió sacarlas porque "no se aprecia lo
+  que importa, que es el caso".
 
 ## Pendientes del cliente
 
