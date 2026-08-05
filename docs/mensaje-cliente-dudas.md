@@ -27,13 +27,14 @@ API): el canonical, el sitemap y `llms.txt` usan la versión SIN www.
 - ✅ **Foto**: retrato genérico que ella eligió, con el encuadre corrido a la derecha para
   que el degradado no tape el rostro.
 
-## ⚠️ Dos cosas que conviene mirar
+## ⚠️ Una cosa que conviene mirar
 
-1. **Las 80 fiscalizaciones.** Regina avisó: *"los 80 procesos es de toda mi carrera pero
-   en la empresa son solo 4"* y pidió recomendación. Publicar 80 como logro de la empresa
-   sería engañoso, así que la etiqueta ahora dice **"Fiscalizaciones acompañadas en la
-   trayectoria profesional de Regina Arriaza"** — verdadero y sigue pesando. Falta su OK.
-2. **La foto no es Regina.** Es un retrato de stock de una persona real, puesto en una
+- ✅ **RESUELTO — las cifras.** Regina avisó que las 80 fiscalizaciones eran de toda su
+  carrera (en la empresa son 4). Se reemplazó la banda numérica por **4 pilares
+  cualitativos** (versión que ella misma aprobó): `10+ Empresas asesoradas`,
+  `Casos reales`, `Metodología propia (I.D.E.A.)` y `Visión integral`. Ya no hay ninguna
+  cifra que no se pueda sostener.
+- ⚠️ **La foto no es Regina.** Es un retrato de stock de una persona real, puesto en una
    sección en primera persona ("Soy Regina Pastora Arriaza Benítez") y firmada. Un
    visitante asume que es ella. El `alt` ya no afirma que lo sea, pero lo ideal es
    reemplazarla por una imagen ambiental hasta que tenga su foto profesional.
