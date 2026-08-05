@@ -1,37 +1,55 @@
 # Estado del cliente Arriaza Consulting
 
-## DNS — ✅ RESUELTO 2026-08-04 (noche)
+## DNS — ✅ RESUELTO 2026-08-04
 
-El dominio quedó funcionando. Verificado en vivo:
+`https://arriazaconsulting.cl` sirve el sitio con certificado válido; `www` redirige 301
+al apex. NIC Chile delega a `ns1/ns2.vercel-dns.com`.
+⚠️ El apex NO debe tener `redirect` en Vercel (venía apuntando a www y se invirtió por
+API): el canonical, el sitemap y `llms.txt` usan la versión SIN www.
 
-- NIC Chile ya delega a `ns1.vercel-dns.com` / `ns2.vercel-dns.com`.
-- `https://arriazaconsulting.cl` → **200 OK** con el sitio nuevo y certificado válido.
-- `https://www.arriazaconsulting.cl` → **301** al dominio sin www.
+## Aplicado con lo que respondió Regina (WhatsApp 04 y 05-08-2026)
 
-**Ojo (corregido acá):** Vercel venía con la redirección al revés (apex → www), pero el
-canonical, el sitemap, `llms.txt` y el propio footer apuntan a la versión SIN www. Se
-invirtió por la API de Vercel: el apex sirve el sitio y www redirige con 301. Si alguna
-vez se vuelve a agregar el dominio, revisar que el apex NO tenga `redirect`.
+- ✅ **Teléfono +56 9 6188 6452** en todo el repo (también es su WhatsApp, confirmado).
+- ✅ **Correo `gerencia@arriazaconsulting.cl`** (confirmado 05-08 08:19). Reemplazado en
+  index, blog, `llms.txt` y política de privacidad.
+- ✅ **Logo oficial**: el isotipo (A dorada en cuadro) se dibuja en SVG inline para que se
+  vea nítido en header blanco y footer navy. El PNG oficial vive en `img/logo-arriaza.png`.
+- ✅ **Logos de clientes**: Espacios Constructora e `Control Común` (recortados, sin
+  márgenes). Condominio Villaseca y Empanadas de Pamela Díaz siguen con icono (no tienen
+  logo; Empanadas "está recién", según Regina).
+- ✅ **Autorizaciones**: Control Común (empresa de condominios), Condominio Villaseca (ella
+  es la administradora y tiene representación legal), Espacios y Empanadas. "Los otros no
+  quisieron" → no se agregan más.
+- ✅ **LinkedIn** https://www.linkedin.com/in/regina-arriaza-624526264/ — es la única red
+  con link, así que se quitaron los iconos de Instagram, Facebook y YouTube (volverán
+  cuando mande esos links).
+- ✅ **Agendamiento por WhatsApp** ("es lo más rápido y fácil al cliente").
+- ✅ **Foto**: retrato genérico que ella eligió, con el encuadre corrido a la derecha para
+  que el degradado no tape el rostro.
 
-## Respondido por Regina (2026-08-04, WhatsApp)
+## ⚠️ Dos cosas que conviene mirar
 
-- ✅ **Teléfono: +56 9 6188 6452.** Aplicado en todo el sitio (footer, botones flotantes,
-  todos los enlaces de WhatsApp y también en el blog y `llms.txt`). El teléfono viejo
-  (+56 9 4092 1033) ya no aparece en ningún archivo.
-- ✅ **Foto de Regina.** Guardada en `img/regina-arriaza.jpg` (optimizada de 1.4 MB a
-  135 KB) y montada en la tarjeta "Sobre mí" con encuadre ajustado para que el degradado
-  no le tape el rostro.
-- ⏸️ **Foto de oficina:** no tiene por ahora (trabaja desde casa) → el hero sigue con una
-  imagen provisoria de Unsplash, marcada en el HTML con `FOTO PROVISORIA`.
+1. **Las 80 fiscalizaciones.** Regina avisó: *"los 80 procesos es de toda mi carrera pero
+   en la empresa son solo 4"* y pidió recomendación. Publicar 80 como logro de la empresa
+   sería engañoso, así que la etiqueta ahora dice **"Fiscalizaciones acompañadas en la
+   trayectoria profesional de Regina Arriaza"** — verdadero y sigue pesando. Falta su OK.
+2. **La foto no es Regina.** Es un retrato de stock de una persona real, puesto en una
+   sección en primera persona ("Soy Regina Pastora Arriaza Benítez") y firmada. Un
+   visitante asume que es ella. El `alt` ya no afirma que lo sea, pero lo ideal es
+   reemplazarla por una imagen ambiental hasta que tenga su foto profesional.
 
-## Pendientes (aún sin respuesta)
+## Material recibido y NO usado todavía
 
-1. **Correo:** el sitio publica `admin@arriazaconsulting.cl`; el mockup traía
-   `gerencia@arriazaconsulting.cl`. Sin confirmar.
-2. **WhatsApp:** se asumió que el +56 9 6188 6452 también es WhatsApp (todos los botones
-   apuntan ahí). Confirmar.
-3. **Empresas cliente:** autorización para nombrarlas + logos reales (hoy: iconos).
-4. **Cifras:** 10+ empresas, 80+ fiscalizaciones, 10+ años, 100%.
-5. **Redes sociales:** los 4 iconos del footer apuntan a `#`.
-6. **Agendamiento:** hoy los CTA abren WhatsApp; ¿prefiere Calendly u otra agenda?
-7. **"Recursos":** hoy apunta al blog existente.
+- **3 casos reales** que ella redactó (fiscalización SII / "el problema no estaba en los
+  números" / reorganización empresarial). Están en `docs/casos-reales-cliente.md`. Ella
+  preguntó *"hasta cuántas palabras podría ser"* → falta definir el formato (sección de
+  casos en el home + página por caso).
+- **2 piezas gráficas** de su marca para acompañar los casos:
+  `img/caso-fiscalizacion.jpg` y `img/caso-decisiones.jpg`.
+
+## Pendientes del cliente
+
+1. Links de Instagram y Facebook (dijo que los tiene).
+2. Logo de Espacios en versión definitiva (mandó una imagen; sirve).
+3. Su foto profesional real.
+4. OK a la redacción de las cifras.
