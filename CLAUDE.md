@@ -45,11 +45,40 @@ incluido el blog) y su **foto oficial** en `img/regina-arriaza.jpg`.
 
 Pendientes de contenido (esperando respuesta del cliente):
 
-1. Correo: hoy publica `admin@`; el mockup decía `gerencia@`. Sin confirmar.
-2. Foto del hero: sigue provisoria de Unsplash (no tiene fotos de oficina todavía).
-   Marcada con el comentario `FOTO PROVISORIA` en el HTML.
-3. Links reales de redes sociales (hoy `href="#"`).
-4. Confirmar cifras (10+ empresas, 80+ fiscalizaciones, 10+ años).
-5. OG image nueva (og.jpg sigue siendo la del diseño viejo).
+1. ✅ Correo `gerencia@arriazaconsulting.cl` y teléfono/WhatsApp +56 9 6188 6452.
+2. ✅ Hero: imagen propia que mandó la clienta (`img/hero-reunion.jpg`) con su texto nuevo.
+3. ✅ Redes: solo LinkedIn (es el único link que dio). Faltan Instagram y Facebook.
+4. ✅ Cifras: se reemplazaron por 4 pilares cualitativos, porque las 80 fiscalizaciones
+   eran de su carrera y no de la empresa (ella misma lo advirtió).
+5. ⏳ OG image: `og.jpg` sigue siendo la del diseño viejo.
+6. ⚠️ La foto de «Sobre mí» **no es Regina**: es un retrato de stock que ella eligió
+   mientras se toma su foto profesional. El `alt` no afirma que sea ella.
 
 Dudas completas para el cliente: `docs/mensaje-cliente-dudas.md`.
+
+## SEO e indexación (2026-08-05)
+
+**Estructura publicada:** además del home, el sitio tiene páginas hijas propias, todas
+generadas por `scripts/generar-paginas.py` (NO editar el HTML de esas páginas a mano;
+se regeneran). El CSS y el JS son compartidos en `/assets/` — el home también los usa.
+
+- `/metodologia-idea` — la metodología I.D.E.A. en detalle
+- `/servicios` — los 6 servicios con anclas (`#estrategia-tributaria`, etc.)
+- `/casos` + 3 casos con **texto textual de la clienta** (`docs/casos-reales-cliente.md`)
+- `/sobre-regina-arriaza` — perfil profesional
+
+Cada página lleva canonical, Open Graph, migas y schema.org (Service / Article / Person /
+BreadcrumbList). `sitemap.xml` (14 URLs) y `llms.txt` están al día.
+
+**Search Console:** la propiedad `sc-domain:arriazaconsulting.cl` está verificada por TXT
+en Vercel DNS y dada de alta con `scripts/gsc-add-vercel.py` **del maestro** (hermano de
+`gsc-add.py`, que solo sabe de Cloudflare). Sitemap enviado y 8 URLs empujadas por la
+Indexing API.
+⚠️ La propiedad quedó bajo la **service account**, así que `gsc-queries.py` (que usa el
+refresh token OAuth) NO la lista. Para que los reportes la vean, hay que darle acceso al
+usuario del OAuth desde la interfaz de Search Console (gestión de Alejandro).
+
+**Ojo con las imágenes de los casos:** son piezas que Regina hace para LinkedIn y llevan
+datos impresos. A `img/caso-fiscalizacion.jpg` se le recortó el pie porque mostraba
+`arriazaconsulting-cl.vercel.app` y `Admin@arriazaconsulting.cl` (ambos obsoletos).
+Revisar eso en cada pieza nueva que mande.
