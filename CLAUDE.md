@@ -40,8 +40,10 @@ header blanco, hero con foto sangrada a la derecha, **tríptico** (Servicios | E
 Sobre mí en tarjeta oscura), metodología I.D.E.A., banda de cifras + CTA, y footer de 5
 columnas con la cita y la firma "RA".
 
-Ya aplicado con datos reales de Regina: **teléfono +56 9 6188 6452** (en todo el repo,
-incluido el blog) y su **foto oficial** en `img/regina-arriaza.jpg`.
+Ya aplicado con datos reales de Regina: **teléfono +56 9 6188 6452** y correo
+`gerencia@` (en todo el repo, incluido el blog), el **logo oficial** (isotipo en SVG
+inline, PNG en `img/logo-arriaza.png`) y las imágenes que ella mandó
+(`img/hero-reunion.jpg`, `img/sobre-mi-asesoria.jpg`).
 
 Pendientes de contenido (esperando respuesta del cliente):
 

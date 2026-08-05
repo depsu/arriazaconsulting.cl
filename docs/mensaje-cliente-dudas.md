@@ -49,6 +49,6 @@ API): el canonical, el sitemap y `llms.txt` usan la versión SIN www.
 ## Pendientes del cliente
 
 1. Links de Instagram y Facebook (dijo que los tiene).
-2. Logo de Espacios en versión definitiva (mandó una imagen; sirve).
-3. Su foto profesional real.
-4. OK a la redacción de las cifras.
+2. Su foto profesional real (va a un estudio a tomársela).
+3. Logo de Empanadas de Pamela Díaz (hoy no tiene: "está recién").
+4. `og.jpg` — la imagen que se ve al compartir el sitio sigue siendo la del diseño viejo.
