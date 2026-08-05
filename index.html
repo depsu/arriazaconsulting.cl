@@ -143,7 +143,8 @@
         }
         .hero-actions { display: flex; flex-wrap: wrap; gap: 14px; }
         .hero-photo { position: relative; }
-        .hero-photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+        /* 62% deja visible la pantalla de la presentación, que se corta con el encuadre centrado */
+        .hero-photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 62% center; }
         .hero-photo::after {
             content: ""; position: absolute; inset: 0;
             background: linear-gradient(90deg, var(--navy-950) 0%, rgba(10, 16, 31, .25) 22%, transparent 45%);
@@ -383,9 +384,9 @@
             <div class="hero-text">
                 <span class="hero-kicker reveal">Comprender hoy, decidir mejor, proteger el mañana.</span>
                 <h1 class="reveal reveal-d1">Comprendemos<br>las decisiones.<br><span class="gold">Protegemos el futuro.</span></h1>
-                <p class="hero-copy reveal reveal-d2">Ayudamos a empresas y empresarios a comprender todas las
-                    consecuencias financieras, tributarias, operativas y estratégicas de cada decisión antes de
-                    ejecutarla.</p>
+                <p class="hero-copy reveal reveal-d2">Ayudamos a empresas y empresarios a comprender el impacto
+                    integral de cada decisión antes de ejecutarla, transformando información en estrategias que
+                    reducen riesgos y generan valor sostenible.</p>
                 <div class="hero-actions reveal reveal-d3">
                     <a class="btn btn-gold"
                         href="https://wa.me/56961886452?text=Hola,%20quisiera%20agendar%20un%20diagn%C3%B3stico%20estrat%C3%A9gico%20para%20mi%20empresa.">
@@ -401,9 +402,9 @@
                 </div>
             </div>
             <div class="hero-photo">
-                <!-- FOTO PROVISORIA (Unsplash) — reemplazar por foto real del equipo/oficina -->
-                <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1600&q=80"
-                    alt="Reunión de análisis de decisiones empresariales en Arriaza Consulting" width="900" height="700">
+                <img src="img/hero-reunion.jpg" fetchpriority="high"
+                    alt="Reunión de análisis de decisiones estratégicas: analizar, evaluar, decidir y generar valor"
+                    width="1536" height="1024">
             </div>
         </div>
         <a class="hero-scroll" href="#servicios" aria-label="Bajar">
