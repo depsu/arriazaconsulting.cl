@@ -34,7 +34,10 @@ sin correo-worker.
 ## Estado del rediseño (2026-08-04)
 
 `index.html` reescrito según el mockup del cliente (navy #0F172A + dorado #C5A059,
-Playfair Display). **NO publicado aún** — pendientes antes del push:
+Playfair Display). **PUBLICADO 2026-08-04** (push con OK de Alejandro). El dominio ya
+está agregado al proyecto Vercel (`arriazaconsulting.cl` + `www`); solo falta que el
+cliente cree el registro `A @ 76.76.21.21` (+ `CNAME www cname.vercel-dns.com`) en su
+Cloudflare. Pendientes de contenido (respuestas del cliente):
 
 1. Confirmar teléfono/correo: sitio viejo usa +56 9 4092 1033 / admin@; el mockup dice
    +56 9 6188 6452 / gerencia@. Hoy la página usa los VIEJOS (verificados).
