@@ -21,11 +21,12 @@ sin correo-worker.
 
 - **Repo:** github.com/depsu/arriazaconsulting.cl → **deploy automático por `git push`
   a Vercel** (proyecto `arriazaconsulting-cl`). ⚠️ Un push publica en vivo.
-- **URL viva:** https://arriazaconsulting-cl.vercel.app (el dominio propio aún NO sirve).
-- **DNS:** arriazaconsulting.cl delegado a Cloudflare (janet/rodney.ns.cloudflare.com)
-  pero la **zona está vacía** (sin A ni www) y NO está en nuestra cuenta Cloudflare →
-  la administra el cliente u otro tercero. Tutorial para apuntarla:
-  `docs/mensaje-cliente-dudas.md`.
+- **URL viva:** https://arriazaconsulting.cl ✅ (desde 2026-08-04). `www` redirige 301 al
+  apex. La `.vercel.app` sigue existiendo como respaldo.
+- **DNS:** NIC Chile delega a `ns1/ns2.vercel-dns.com` (ya NO pasa por Cloudflare). La
+  zona la sirve Vercel; no hay panel de DNS externo que tocar.
+  ⚠️ El apex NO debe tener `redirect` en Vercel (venía apuntando a www y se invirtió por
+  API): el canonical, el sitemap y `llms.txt` usan la versión SIN www.
 - `vercel.json` con `cleanUrls: true` (enlazar `/terminos`, no `/terminos.html`).
 - Blog tributario existente en `/blog` (3 posts) — se conserva.
 - El repo viejo local (`proyectos-personales/old-no-tomar-en-cuenta/arriazaconsulting.cl`)
@@ -34,15 +35,19 @@ sin correo-worker.
 ## Estado del rediseño (2026-08-04)
 
 `index.html` reescrito según el mockup del cliente (navy #0F172A + dorado #C5A059,
-Playfair Display). **PUBLICADO 2026-08-04** (push con OK de Alejandro). El dominio ya
-está agregado al proyecto Vercel (`arriazaconsulting.cl` + `www`); solo falta que el
-cliente cree el registro `A @ 76.76.21.21` (+ `CNAME www cname.vercel-dns.com`) en su
-Cloudflare. Pendientes de contenido (respuestas del cliente):
+Playfair Display) y **EN VIVO en el dominio propio**. La estructura calca el mockup:
+header blanco, hero con foto sangrada a la derecha, **tríptico** (Servicios | Empresas |
+Sobre mí en tarjeta oscura), metodología I.D.E.A., banda de cifras + CTA, y footer de 5
+columnas con la cita y la firma "RA".
 
-1. Confirmar teléfono/correo: sitio viejo usa +56 9 4092 1033 / admin@; el mockup dice
-   +56 9 6188 6452 / gerencia@. Hoy la página usa los VIEJOS (verificados).
-2. Fotos reales (hero y retrato de Regina son Unsplash provisorias, marcadas con
-   comentario `FOTO PROVISORIA` en el HTML).
+Ya aplicado con datos reales de Regina: **teléfono +56 9 6188 6452** (en todo el repo,
+incluido el blog) y su **foto oficial** en `img/regina-arriaza.jpg`.
+
+Pendientes de contenido (esperando respuesta del cliente):
+
+1. Correo: hoy publica `admin@`; el mockup decía `gerencia@`. Sin confirmar.
+2. Foto del hero: sigue provisoria de Unsplash (no tiene fotos de oficina todavía).
+   Marcada con el comentario `FOTO PROVISORIA` en el HTML.
 3. Links reales de redes sociales (hoy `href="#"`).
 4. Confirmar cifras (10+ empresas, 80+ fiscalizaciones, 10+ años).
 5. OG image nueva (og.jpg sigue siendo la del diseño viejo).

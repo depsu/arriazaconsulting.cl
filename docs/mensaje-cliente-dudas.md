@@ -1,33 +1,37 @@
-# Mensajes para el cliente (Arriaza Consulting)
+# Estado del cliente Arriaza Consulting
 
-## Estado DNS — verificado 2026-08-04 (tarde)
+## DNS — ✅ RESUELTO 2026-08-04 (noche)
 
-⚠️ **El cambio de NS todavía NO está aplicado.** Verificado sin caché:
+El dominio quedó funcionando. Verificado en vivo:
 
-- `dig +norec @b.nic.cl arriazaconsulting.cl NS` → sigue devolviendo
-  `janet.ns.cloudflare.com` / `rodney.ns.cloudflare.com`. Como se consultó al
-  autoritativo del TLD .cl, no es caché local: es lo que NIC tiene publicado.
-- La zona de Cloudflare tampoco tiene registro A ni www (`dig @janet...` vacío).
-- **Del lado de Vercel está todo listo:** `dig @ns1.vercel-dns.com arriazaconsulting.cl A`
-  ya responde `64.29.17.1` / `64.29.17.65`. Apenas NIC publique la delegación, funciona solo.
-- Monitoreado 4 min sin cambios. Si Alejandro guardó el cambio en NIC, esperar y
-  reverificar; si no aparece en ~1 hora, revisar que el cambio quedó guardado.
+- NIC Chile ya delega a `ns1.vercel-dns.com` / `ns2.vercel-dns.com`.
+- `https://arriazaconsulting.cl` → **200 OK** con el sitio nuevo y certificado válido.
+- `https://www.arriazaconsulting.cl` → **301** al dominio sin www.
 
-Dos caminos válidos (cualquiera sirve):
-- **NIC:** servidores de nombre → `ns1.vercel-dns.com` y `ns2.vercel-dns.com`.
-- **Cloudflare (si se quedan ahí):** registro `A @ 76.76.21.21` + `CNAME www
-  cname.vercel-dns.com`, ambos en "DNS only" (nube gris).
+**Ojo (corregido acá):** Vercel venía con la redirección al revés (apex → www), pero el
+canonical, el sitemap, `llms.txt` y el propio footer apuntan a la versión SIN www. Se
+invirtió por la API de Vercel: el apex sirve el sitio y www redirige con 301. Si alguna
+vez se vuelve a agregar el dominio, revisar que el apex NO tenga `redirect`.
 
-## Dudas pendientes (ninguna respondida aún) — mensaje de WhatsApp
+## Respondido por Regina (2026-08-04, WhatsApp)
 
-Ver bloque de copy-paste en la respuesta de la sesión. Resumen de lo que falta:
+- ✅ **Teléfono: +56 9 6188 6452.** Aplicado en todo el sitio (footer, botones flotantes,
+  todos los enlaces de WhatsApp y también en el blog y `llms.txt`). El teléfono viejo
+  (+56 9 4092 1033) ya no aparece en ningún archivo.
+- ✅ **Foto de Regina.** Guardada en `img/regina-arriaza.jpg` (optimizada de 1.4 MB a
+  135 KB) y montada en la tarjeta "Sobre mí" con encuadre ajustado para que el degradado
+  no le tape el rostro.
+- ⏸️ **Foto de oficina:** no tiene por ahora (trabaja desde casa) → el hero sigue con una
+  imagen provisoria de Unsplash, marcada en el HTML con `FOTO PROVISORIA`.
 
-1. **Teléfono y correo definitivos** — hoy publicado: +56 9 4092 1033 /
-   admin@arriazaconsulting.cl. El mockup traía +56 9 6188 6452 / gerencia@.
-2. **Fotos reales** — hero y retrato de Regina son Unsplash provisorias (marcadas en el
-   HTML con `FOTO PROVISORIA`).
-3. **Empresas cliente** — autorización para nombrarlas + logos reales (hoy: iniciales).
-4. **Cifras** — 10+ empresas, 80+ fiscalizaciones, 10+ años, 100% (¿confirmadas?).
-5. **Redes sociales** — los 4 iconos del footer apuntan a `#`.
-6. **Agendamiento** — hoy los CTA abren WhatsApp; ¿prefiere Calendly u otra agenda?
-7. **"Recursos"** — hoy apunta al blog existente; confirmar si va contenido propio.
+## Pendientes (aún sin respuesta)
+
+1. **Correo:** el sitio publica `admin@arriazaconsulting.cl`; el mockup traía
+   `gerencia@arriazaconsulting.cl`. Sin confirmar.
+2. **WhatsApp:** se asumió que el +56 9 6188 6452 también es WhatsApp (todos los botones
+   apuntan ahí). Confirmar.
+3. **Empresas cliente:** autorización para nombrarlas + logos reales (hoy: iconos).
+4. **Cifras:** 10+ empresas, 80+ fiscalizaciones, 10+ años, 100%.
+5. **Redes sociales:** los 4 iconos del footer apuntan a `#`.
+6. **Agendamiento:** hoy los CTA abren WhatsApp; ¿prefiere Calendly u otra agenda?
+7. **"Recursos":** hoy apunta al blog existente.
