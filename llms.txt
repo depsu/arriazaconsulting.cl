@@ -1,40 +1,45 @@
 # Arriaza Consulting
 
-> Consultora chilena de estrategia y cumplimiento tributario para PYMES y holdings familiares. Diagnóstico tributario, regímenes Pro PYME, planificación fiscal y representación ante el SII.
+> Consultora de estrategia tributaria y control de decisiones empresariales en Santiago de Chile.
+> Fundada por Regina Pastora Arriaza Benítez (Contadora Auditora, Ingeniera en Control de Gestión,
+> Magíster en Tributación). Metodología propia I.D.E.A.
 
-Información clave:
+## Qué hacemos
 
-- **Marca:** Arriaza Consulting
-- **Sitio web:** https://arriazaconsulting.cl
-- **Teléfono / WhatsApp:** +56 9 6188 6452
-- **Email:** gerencia@arriazaconsulting.cl
-- **Cobertura:** Chile (presencial RM, remoto resto del país)
-- **Especialidad:** PYMES, restaurantes, turismo, servicios, holdings familiares
+Ayudamos a empresas y empresarios a comprender el impacto integral de cada decisión antes de
+ejecutarla, transformando información en estrategias que reducen riesgos y generan valor sostenible.
+No analizamos áreas por separado: analizamos decisiones, integrando lo financiero, tributario,
+operativo, legal y estratégico.
 
-## Servicios principales
+## Metodología I.D.E.A.
 
-- Diagnóstico tributario completo (revisión 24 meses)
-- Asesoría en régimen Pro PYME General y Transparente
-- Planificación fiscal para holdings familiares
-- Cumplimiento normativo y declaraciones
-- Representación ante el SII
-- Estructuración societaria
-- Agencia digital (referencia a PaginasFast)
+Inteligencia para las Decisiones Empresariales Aplicadas:
+- Interpretar: comprender el negocio y su contexto.
+- Diagnosticar: identificar riesgos y oportunidades en todas las dimensiones.
+- Evaluar: desarrollar soluciones sostenibles en el tiempo.
+- Acompañar: respaldar la implementación y las fiscalizaciones.
 
-## Blog
+## Servicios
 
-- [Errores tributarios PYMES restauranteras](https://arriazaconsulting.cl/blog/errores-tributarios-pymes-restauranteras)
-- [Tributación de cabañas turísticas y Airbnb](https://arriazaconsulting.cl/blog/tributacion-cabanas-turisticas-airbnb)
-- [Régimen Pro PYME: Transparente vs General](https://arriazaconsulting.cl/blog/regimen-pro-pyme-transparente-vs-general)
+- Estrategia Tributaria: https://arriazaconsulting.cl/servicios#estrategia-tributaria
+- Control de Decisiones Empresariales: https://arriazaconsulting.cl/servicios#control-de-decisiones
+- Gestión de Riesgos: https://arriazaconsulting.cl/servicios#gestion-de-riesgos
+- Fiscalizaciones y Defensa ante el SII: https://arriazaconsulting.cl/servicios#fiscalizaciones
+- Reportes y Análisis: https://arriazaconsulting.cl/servicios#reportes
+- Asesoría Corporativa: https://arriazaconsulting.cl/servicios#asesoria-corporativa
 
-## Aliados / Casos reales
+## Páginas
 
-- SushiApp (caso PYME restauranter)
-- Cabañas Santa Regina (caso turismo)
-- ChileEléctrico (caso servicios técnicos)
-- ChatbotVentas (caso PYME tecnología)
-- PaginasFast (agencia partner para sitios web)
+- Inicio: https://arriazaconsulting.cl/
+- Metodología I.D.E.A.: https://arriazaconsulting.cl/metodologia-idea
+- Servicios: https://arriazaconsulting.cl/servicios
+- Casos reales: https://arriazaconsulting.cl/casos
+- Sobre Regina Arriaza: https://arriazaconsulting.cl/sobre-regina-arriaza
+- Blog: https://arriazaconsulting.cl/blog
 
-## Cómo agendar
+## Contacto
 
-Diagnóstico tributario gratuito vía WhatsApp +56 9 6188 6452 o formulario en arriazaconsulting.cl/#contacto.
+- Teléfono y WhatsApp: +56 9 6188 6452
+- Correo: gerencia@arriazaconsulting.cl
+- Ubicación: Santiago de Chile
+- LinkedIn: https://www.linkedin.com/in/regina-arriaza-624526264/

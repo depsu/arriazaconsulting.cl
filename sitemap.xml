@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://arriazaconsulting.cl/</loc><lastmod>2026-05-07</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://arriazaconsulting.cl/agencia-digital</loc><lastmod>2026-05-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://arriazaconsulting.cl/blog</loc><lastmod>2026-05-07</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://arriazaconsulting.cl/blog/errores-tributarios-pymes-restauranteras</loc><lastmod>2026-05-07</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://arriazaconsulting.cl/blog/tributacion-cabanas-turisticas-airbnb</loc><lastmod>2026-05-07</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://arriazaconsulting.cl/blog/regimen-pro-pyme-transparente-vs-general</loc><lastmod>2026-05-07</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://arriazaconsulting.cl/terminos</loc><lastmod>2026-05-07</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://arriazaconsulting.cl/politica-privacidad</loc><lastmod>2026-05-07</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://arriazaconsulting.cl/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://arriazaconsulting.cl/servicios</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://arriazaconsulting.cl/metodologia-idea</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://arriazaconsulting.cl/casos</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://arriazaconsulting.cl/casos/fiscalizacion-sii-otros-activos</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://arriazaconsulting.cl/casos/decisiones-que-explican-los-resultados</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://arriazaconsulting.cl/casos/reorganizacion-empresarial-razon-de-negocios</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://arriazaconsulting.cl/sobre-regina-arriaza</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://arriazaconsulting.cl/blog</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://arriazaconsulting.cl/blog/errores-tributarios-pymes-restauranteras</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://arriazaconsulting.cl/blog/tributacion-cabanas-turisticas-airbnb</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://arriazaconsulting.cl/blog/regimen-pro-pyme-transparente-vs-general</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://arriazaconsulting.cl/terminos</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://arriazaconsulting.cl/politica-privacidad</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
 </urlset>
