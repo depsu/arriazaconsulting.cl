@@ -25,6 +25,13 @@ sin correo-worker.
   apex. La `.vercel.app` sigue existiendo como respaldo.
 - **DNS:** NIC Chile delega a `ns1/ns2.vercel-dns.com` (ya NO pasa por Cloudflare). La
   zona la sirve Vercel; no hay panel de DNS externo que tocar.
+- **📧 CORREO EN ZOHO — se cayó al cambiar los NS y se restauró el 06-08.** La zona vieja
+  de Cloudflare NO tenía registros web (por eso el sitio no cargaba) pero SÍ el correo, y
+  cambiar la delegación se lo llevó puesto. Registros hoy en Vercel:
+  `MX @ mx.zoho.com 10`, `mx2.zoho.com 20`, `mx3.zoho.com 50` y
+  `TXT @ "v=spf1 include:zohomail.com ~all"`. Sin DKIM ni DMARC (tampoco los tenía antes).
+  ⚠️ **Regla:** antes de mover los NS de cualquier cliente, copiar la zona completa
+  (MX/TXT/CNAME), no solo lo web.
   ⚠️ El apex NO debe tener `redirect` en Vercel (venía apuntando a www y se invirtió por
   API): el canonical, el sitemap y `llms.txt` usan la versión SIN www.
 - `vercel.json` con `cleanUrls: true` (enlazar `/terminos`, no `/terminos.html`).
